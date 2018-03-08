@@ -1,6 +1,6 @@
 ## Alexa for Business Admin Guide
 
-The open source version of the AWS CodeCommit User Guide. You can submit feedback & requests for changes by submitting issues in this repo or by making proposed changes & submitting a pull request.
+The open source version of the Alexa for Business Administration Guide. To submit feedback or requests for changes, submit an issue or make changes and submit a pull request.
 
 ## License Summary
 
