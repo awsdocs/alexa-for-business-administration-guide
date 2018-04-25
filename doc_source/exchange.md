@@ -3,26 +3,22 @@
 **To link Alexa for Business to Microsoft Exchange**
 
 1. Before you proceed, confirm that you meet the following requirements:
-
    + You have an administrator account within your Microsoft Exchange server\.
-
-   + Microsoft Exchange is version 2010 SP1 or higher\.
-
-   + You have a valid Exchange Web Services \(EWS\) endpoint\.
-
+   + Microsoft Exchange is version 2013\.
+   + You have a valid Exchange Web Services \(EWS\) endpoint with a valid digital certificate purchased from a trusted public certificate authority \(CA\)\.
    + You have basic authentication enabled on your Exchange Web Servers \(EWS\) endpoint\.
 
 1. Verify that basic authentication is enabled:
 
    1. Open Microsoft Exchange Management Shell\.
 
-   1. Type **Get\-WebServicesVirtualDirectory | fl**\.
+   1. Type **Get\-WebServicesVirtualDirectory \| fl**\.
 
    1. Verify that the parameter** BasicAuthentication** is set to **True**\.
 
 1. If basic authentication isn't enabled, run the following command to enable it:
 
-   Set\-WebServicesVirtualDirectory \-Identity "Contoso\\EWS\(Default Web Site\)" \-BasicAuthentication $true
+   `Set-WebServicesVirtualDirectory -Identity "Contoso\EWS(Default Web Site)" -BasicAuthentication $true`
 **Note**  
 Contoso\\EWS\(Default Web Site\) is the identity of the Microsoft Exchange Web Services virtual directory\.
 
@@ -32,31 +28,31 @@ Contoso\\EWS\(Default Web Site\) is the identity of the Microsoft Exchange Web S
 
    1. Run the following command to create the service account\.
 
-      New\-Mailbox \-UserPrincipalName alexaforbusiness@your\_domain \-Alias Alexa for Business \-Name alexaforbusiness \-OrganizationalUnit Users \-FirstName Alexa \-LastName Service Account \-DisplayName "Alexa for Business Service Account"
+      `New-Mailbox -UserPrincipalName alexaforbusiness@your_domain -Alias Alexa for Business -Name alexaforbusiness -OrganizationalUnit Users -FirstName Alexa -LastName Service Account -DisplayName "Alexa for Business Service Account"`
 **Note**  
-Make sure that "your\_domain" is the domain of your organization\. You are prompted to enter a password\.
+Make sure that `your_domain` is the domain of your organization\. You are prompted to enter a password\.
 
 1. To look up meeting dial\-in information from your resource mailboxes, configure them to include descriptions:
 
-   1. Open the Exchange Management Shell\. 
+   1. Run one of the following commands to keep the descriptions in the meeting invites of your resource mailboxes:
 
-   1. Run the following command to keep the descriptions in the meeting invites of your resource mailboxes:
+     For a single room mailbox:
 
-      Get\-Mailbox \-ResultSize unlimited \-Filter \{\(RecipientTypeDetails \-eq 'RoomMailbox' \)\} | Set\-CalendarProcessing \-DeleteComments $FALSE
+     `Set-CalendarProcessing <room name> -DeleteComments $FALSE`
 
-1. Set up permissions\. The service account must have permissions to access the calendars in your organization\. You can enable service account access to the calendars in your organization by using one of the following two methods:
+     For all room mailboxes:
 
-   + Method 1: Set up impersonation, which enables the service account to impersonate a given account so that it can perform all operations using the permission associated with the given account:
+     `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails 'RoomMailbox' | Set-CalendarProcessing -DeleteComments $FALSE`
 
-     1. Open the Exchange Management Shell and run the following command:
+1. Set up permissions\. The service account must have permissions to access the room calendars in your organization\. Run one of the following commands to give the service account access to your room resource mailboxes:
 
-        New\-ManagementRoleAssignment –name:impersonationAssignmentName –Role:ApplicationImpersonation –User: alexaforbusiness 
+   For a single room mailbox:
 
-   + Method 2: Add the service account as delegate for each of your room mailboxes\. 
+   `Add-MailboxFolderPermission <room name>:\Calendar -User alexaforbusiness -AccessRights ReadItems`
 
-     1. Run the following command to give the service account access to all room mailboxes:
+   For all room mailboxes:
 
-        Get\-Mailbox \-ResultSize unlimited \-Filter \(RecipientTypeDetails \-eq 'RoomMailbox' \) | Add\-MailboxPermission \-User alexaforbusiness \-AccessRights ReadPermission
+   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails 'RoomMailbox' | ForEach-Object {Add-MailboxFolderPermission $_":\calendar" -user alexaforbusiness -AccessRights ReadItems}`
 
 1. Link the service account to Alexa for Business\.
 
@@ -64,15 +60,15 @@ Make sure that "your\_domain" is the domain of your organization\. You are promp
 
    1. Choose **Calendar**, **Microsoft Exchange**\.
 
-   1. Enter the User Principal Name \(UPN\) of your service account\.
+   1. Enter the user principal name \(UPN\) of your service account\.
 
    1. Enter the service account password\.
 
    1. Enter the URL of your EWS endpoint\. The default URL for EWS is usually in the following format: https://mail\.domain\.com/EWS/Exchange\.asmx\.
 
-   1. Select the access method you have set up\.
+   1. For **Access method**, select **Delegation**\.
 
-   1. Choose **Link account** to complete the setup\.
+   1. Choose **Link account**\.
 
 1. Associate the email address of your resource mailboxes in Microsoft Exchange to your Alexa for Business rooms\.
 
@@ -100,10 +96,4 @@ Make sure that "your\_domain" is the domain of your organization\. You are promp
 
    1. Your Echo device prompts you to join the scheduled meeting without asking you for the meeting ID\.
 
-If you have any issues linking Alexa for Business to Microsoft Exchange, try these troubleshooting tips:
-
-+ If account linking fails in the Alexa app, verify that the email address you invited the user with matches the email address in your Microsoft Exchange server\. Also, make sure that basic authentication is enabled for your Exchange Web Services \(EWS\) endpoint\.
-
-+ To test the connectivity to your Microsoft Exchange server, use the [Microsoft Remote Connectivity Tester](https://testconnectivity.microsoft.com)\. To test your setup, choose **Service Account Access** under the **Microsoft Exchange Web Services Connectivity Tests**\. Use the email address of the user that failed to link their account as the target mailbox email address and impersonated user\.
-
-+ If setting up the Microsoft Exchange account fails in Alexa for Business and you see the error message "The calendar account could not be linked\. If the issue persists, contact AWS Support\. Invalid parameter provided”, validate that your Exchange Web Services \(EWS\) endpoint is valid and remotely accessible\. 
+If you have any issues linking Alexa for Business to Microsoft Exchange, see [Set up Microsoft Exchange Access for Users](connect-exchange.md)\.

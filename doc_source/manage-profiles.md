@@ -11,24 +11,16 @@ When you create a room, you must select a room profile\. If you have not created
 1. Choose **Room profiles**, **Create room profile**\.
 
 1. Fill in the following fields:
-
    + **Profile name** – Enter a unique name for the room profile\. \(Required\)
-
    + **Location** – Enter the physical address of the building\. \(Required\)
-
    + **Time zone** – Select the time zone for the room profile\. \(Required\)
-
    + **Wake word** – Select the voice command that turns on the device\.
-
    + **Temperature units** – Choose **Fahrenheit** or **Celsius**\.
-
    + **Distance units** – Choose **Feet** or **Meters**\.
-
    + **Max volume** – Choose a value between **6**–**10** to limit the volume output of the device to this value\.
-
    + **Device setup mode** – Choose **On** to allow users to hold the action button for 7 seconds to put the device into setup mode\. Otherwise, choose **Off**\.
-
    + **Outbound calling** – Choose **Enable** or **Disable** to specify the ability to make outbound PSTN phone calls from the Echo devices\.
+   + **Address book** – Select the address book you want to assign to the room profile\.
 
 1. Choose **Create**\.
 

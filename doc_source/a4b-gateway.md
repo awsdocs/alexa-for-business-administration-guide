@@ -22,6 +22,6 @@ The gateway needs two pairs of AWS credentials to communicate with Alexa for Bus
 
 1. To create a second user that is used to run the Alexa for Business gateway, repeat steps 2\-7\. Enter a user name \(for example, AlexaforBusinessGateway\) and choose **AlexaForBusinessGatewayExecution** in the list of policies\.
 
-
+**Topics**
 + [Installing the Gateway](install-gateway.md)
 + [Maintaining the Gateway](maintain-gateway.md)

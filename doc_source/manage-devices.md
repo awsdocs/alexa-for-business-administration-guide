@@ -42,21 +42,13 @@ We recommend that you label the devices with the room to help ensure that the de
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
 1. Choose **Shared devices** to see a list of your registered devices and the following information for each device:
-
    + **Serial number** – The serial number of the device\.
-
    + **Type** – The type of device\. 
-
    + **Device name** – The name of the device\.
-
    + **Assigned room** – The room to which the device is assigned\.
-
    + **Status** – The status of the skills and settings being applied to the device\.
-
      + **Synced** – All skills and settings have been applied to the device\.
-
      + **Sync in progress** – Alexa for Business is applying the skills and settings to the device\.
-
      + **Sync needed** –The device was unplugged or not connected to the network when Alexa for Business was applying skills and setting to the device\.
 **Note**  
 To prevent your device from being offline, assign your device to a room within 24 hours of the time that you plan on plugging it into the room\. 

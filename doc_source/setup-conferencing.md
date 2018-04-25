@@ -1,47 +1,30 @@
 # Set up Alexa Conferencing<a name="setup-conferencing"></a>
 
-Alexa for Business enables you to dial into meetings by just using your voice\. You can use Alexa to connect to meetings by controlling existing video conferencing equipment or by using the Echo device as a speaker phone\. Alexa for Business offers Alexa skills for the most common video conferencing equipment\.
+Alexa for Business enables you to dial into meetings by just using your voice\. To dial into a meeting, say “Alexa, join my meeting," If the meeting room has a supported video conferencing system, the request is sent to the third\-party Alexa skill\. The skill communicates with the video conferencing system, verifies if there is a scheduled meeting on the calendar, and prompts the user for confirmation to join the meeting\. If there is no scheduled meeting, Alexa prompts the user for the meeting ID and optionally the PIN to join their meeting\. The skill initiates a video conferencing call from the video conferencing system to the meeting\.
 
-When Alexa hears a user request “Alexa, join my meeting,” the request is sent to the Alexa for Business conferencing service\. When the meeting room has a supported video conferencing system, the request is sent to the third\-party Alexa skill\. The skill communicates with the video conferencing system, looks up if there is a scheduled meeting on the calendar, and prompts the user for confirmation to join this meeting\. If there is no scheduled meeting, Alexa prompts the user for the meeting ID and optionally the PIN to join their meeting\. The skill initiates a video conferencing call from the video conferencing system to your conferencing provider\.
 
-When the room doesn’t contain a supported video conferencing setup, Alexa searches for a scheduled meeting on the calendar and prompts the user for a confirmation to join the meeting\. If there is no scheduled meeting, Alexa prompts the user for the meeting ID and optionally the PIN to join the meeting, and makes a PSTN call to your conferencing provider\.
 
-Alexa for Business can join scheduled meetings of the following conferencing providers:
+Alexa for Business supports the following video conferencing systems and in\-room control systems:
 
+
+****  
+
+| Device model | Requirements | 
+| --- | --- | 
+| Cisco/Tandberg SX, EX, DX, MX, C  | Firmware must be TC7\.3 or CE8\.0\+ | 
+| Cisco Spark Room Kit | Firmware must be CE8\.0\+ | 
+| Polycom Group Series | Available in beta\. To get the latest GS beta firmware to enable integration, see [Polycom and Alexa for Business Integration](http://response.polycom.com/04-DR-PS-2017-Q4-Amazon-Alexa-LP)\. | 
+| Zoom Rooms |  Zoom Rooms for Mac version 4\.1\.20278\.0206 or higher Zoom Rooms for PC version 4\.1\.22620\.0319 or higher  | 
+| Crestron 3\-Series | \- | 
+
+When the room doesn’t contain any of the supported video conferencing or in\-room control systems, you can use the Echo as a speaker phone to make a PSTN call to your conferencing provider\.
+
+When you connect Alexa for Business to your calendar system, Alexa can join scheduled meetings\. Alexa for Business can automatically detect dial\-in information from the following conferencing providers:
 + Amazon Chime
-
 + BlueJeans
-
 + Zoom
-
 + RingCentral Meetings
-
 + Cisco WebEx
-
 + Skype for Business
-
-**To configure Alexa for Business to join meetings with an Echo device**
-
-1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
-
-1. Choose **Room profiles**, choose the name of the room profile associated with your meeting rooms, and enable **Outbound calling**\.
-
-1. Choose **Conferencing**, **Add provider**\.
-
-1. Choose one of the available conferencing providers, which automatically fills in the **Provider** pane\.
-**Note**  
-If the conference provider used by your organization is not available, choose **Custom conferencing provider**\.
-
-1. Review the following settings and edit them as necessary:
-
-   + **Meeting settings** – Specify whether a meeting PIN is required to join the meeting\. \(Required\)
-
-   + **PSTN dial\-in number** – Specify the phone number of your conferencing provider\. This must be a US phone number\.
-
-   + **PSTN dial\-in delays** – Specify the delays before the meeting ID and PIN are sent using DTMF\.
-
-1. Choose **Add**\.
-
-1. \(Optional\) To join scheduled meetings, link your calendar to Alexa for Business\. For more information, see [Link Alexa for Business to Your Calendar System](manage-calendaring.md)\.
-
-You can now say “Alexa, join my meeting” and Alexa prompts you to join the scheduled meeting or to provide the ID of the meeting to join\.
++ Fuze
++ Google Hangouts Meet \(only supported for shared devices\)

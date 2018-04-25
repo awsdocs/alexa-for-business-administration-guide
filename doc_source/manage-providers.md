@@ -11,13 +11,9 @@
 If the conference provider used by your organization is not available, choose **Other**\.
 
 1. Review the following settings and edit them as necessary:
-
    + **Meeting settings** – Specify whether a meeting PIN is required to join the meeting\. \(Required\)
-
    + **PSTN dial\-in number** – Specify the phone number of your conferencing provider\. This must be a US phone number\.
-
    + **PSTN dial\-in delays** – Specify the delays before the meeting ID and PIN are sent using DTMF\.
-
    + **SIP/H323 dial\-in ** – SIP/H323 dial\-in settings are used to dial into meetings using your existing video conferencing equipment\. \(Required\)
 
 1. Choose **Add**\.
@@ -41,13 +37,9 @@ You can’t remove a provider that is set as the default\.
 1. Choose **Conference settings** and choose the name of the provider to edit\. 
 
 1. Edit the following settings as necessary:
-
    + **Meeting settings** – Specify whether a meeting PIN is required to join the meeting\. \(Required\)
-
    + **PSTN dial\-in number** – Specify the phone number of your conferencing provider\. This must be a US phone number\.
-
    + **PSTN dial\-in delays** – Specify the delays before the meeting ID and PIN are sent using DTMF\.
-
    + **SIP/H323 dial\-in** – SIP/H323 dial\-in settings are used to dial into meetings using your existing video conferencing equipment\. \(Required\)
 
 1. Choose **Save**\.

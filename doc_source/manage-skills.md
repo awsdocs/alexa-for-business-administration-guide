@@ -14,6 +14,8 @@ Skills are voice\-driven capabilities that enhance the functionality of your Ale
 
 1. If the skill requires it, link your master account by following the account linking steps\. When you are done, you receive a success message in the console\.
 
+1. If the skill supports it, optionally enable permissions by choosing **Allow** next to each permission and choose **Save**\. 
+
 1. Choose **Enabled skills**, select the check box next to the skill that you just added, and choose **Add to skill group**\.
 
 1. Select the check box next to the skill group to which to add the skill, and choose **Add**\.
@@ -22,6 +24,18 @@ The skill is enabled on all Alexa devices associated with the skill group\.
 
 **Note**  
 If there are a large number of rooms associated with the same skill group, this step might take up to five minutes\.
+
+**To change permissions for a skill**
+
+1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
+
+1. Choose **Skills** and select the skill name\.
+
+1. In the upper\-right corner, choose **Change permissions**\.
+
+1. Choose **Allow** next to each permission to enable it, and then choose **Save**\.
+**Note**  
+The permission given is at the skill level\. It applies to all shared devices with that skill enabled in your organization\. The permission setting doesn't impact the permissions of your enrolled users\. Users must select the permission for themselves in the Alexa companion app\. For more information, see [Enable Alexa Skills](https://www.amazon.com/gp/help/customer/display.html?nodeId=201848700)\.
 
 **To remove a skill**
 
