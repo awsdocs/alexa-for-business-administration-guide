@@ -12,3 +12,5 @@ In addition to the benefits available to users after joining your organization, 
 + [Set up Enrollment](enroll-users.md)
 + [Invite and Remove Users](add-users.md)
 + [Set up Microsoft Exchange Access for Users](connect-exchange.md)
++ [Require Users to Restrict Calendars to Voice](voice-restrict.md)
++ [Instruct Users to Use the Alexa Smart Scheduling Assistant](scheduling-assistant.md)

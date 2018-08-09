@@ -1,6 +1,6 @@
 # Managing Room Profiles<a name="manage-profiles"></a>
 
-To simplify the process of creating and managing rooms, first define room profiles\. A room profile contains the settings for your Alexa devices so that they can provide you with the weather, time, and other location\-based information\. For example, you can create a room profile that contains the Alexa settings that apply to all rooms in the same building
+To simplify the process of creating and managing rooms, first define room profiles\. A room profile contains the settings for your Alexa devices so that they can provide you with the weather, time, and other location\-based information\. For example, you can create a room profile that contains the Alexa settings that apply to all rooms in the same building\.
 
 When you create a room, you must select a room profile\. If you have not created one, a default room profile is provided\. You can modify the settings, including the default room profile, at any time\.
 

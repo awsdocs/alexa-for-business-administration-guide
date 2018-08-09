@@ -126,3 +126,6 @@ Alexa can now read back the upcoming events on the calendar\.
 1. Enter the new user principal name \(UPN\) of the service account that you just created\.
 
 1. Enter the service account password for the new UPN, and choose **Link account**\.
+
+**Expiring password notifications**  
+Alexa for Business sends warning emails to the service account holder at 14 days, 7 days, 3 days, and 1 day before their password expires\. After the password expires, the user receives a daily reminder email\. Users can also see these alerts in their AWS [Personal Health Dashboard](https://phd.aws.amazon.com/phd/home#/dashboard)\.

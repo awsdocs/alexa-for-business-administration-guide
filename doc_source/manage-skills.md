@@ -46,7 +46,7 @@ The permission given is at the skill level\. It applies to all shared devices wi
 1. Choose **Disable** next to the skill that you want to remove, then choose **Disable**\.
 
 **To link a master account to a skill**  
-Some skills require the ability to connect with a user in another system\. This is called account linking, which links a Alexa for Business account to a user account in another system\.
+Some skills require the ability to connect with a user in another system\. This is called account linking, which links an Alexa for Business account to a user account in another system\.
 
 When you add a skill that requires account linking, you are prompted to open the sign\-in page of the skill provider and sign in with your user account\. After you successfully sign in, Alexa obtains an access token that uniquely identifies the user within the system\. Alexa for Business applies this token to all devices that receive your skill by default, making this your master account\. Alexa stores this token and includes it in requests sent to the skill provider when the skill is invoked\.
 

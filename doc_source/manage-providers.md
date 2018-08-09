@@ -1,5 +1,7 @@
 # Manage Conferencing Providers<a name="manage-providers"></a>
 
+For more information about conference providers, PSTN settings, and SIP/H323 settings, see [Understanding Alexa\-enabled Conferencing](setup-conferencing.md)\.
+
 **To add a conferencing provider**
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.

@@ -37,7 +37,7 @@ The Device Setup Tool connects your devices to your Wi\-Fi network and registers
 
 We recommend that you label the devices with the room to help ensure that the device remains in the correct room\. To move devices from one room to another, unassign and then re\-assign the devices\.
 
-**To list devices**
+**To view device information**
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
@@ -46,22 +46,35 @@ We recommend that you label the devices with the room to help ensure that the de
    + **Type** – The type of device\. 
    + **Device name** – The name of the device\.
    + **Assigned room** – The room to which the device is assigned\.
-   + **Status** – The status of the skills and settings being applied to the device\.
-     + **Synced** – All skills and settings have been applied to the device\.
-     + **Sync in progress** – Alexa for Business is applying the skills and settings to the device\.
-     + **Sync needed** –The device was unplugged or not connected to the network when Alexa for Business was applying skills and setting to the device\.
+   + **Status** – The status of the device, including the network connection status of the skills and settings being applied to the device\.
+     + **Online** – The device is connected to the network and all skills and settings have been applied\.
+     + **Offline** – The device isn’t connected to the network\. The device might be unplugged or the network might not be working\. The time stamp next to the status shows the date and local time when the device was first detected to be offline\. 
+     + **Sync in progress** – The device is connected to the network, and Alexa for Business is applying skills and settings to the device\.
+     + **Sync needed** –The device is connected to the network, but not all skills and settings have been applied to the device\. This usually happens when the device was offline when Alexa for Business tried to apply all skills and settings\. To sync the device, choose **Sync**\. To sync multiple devices with this status, select all the devices from the table and choose **Sync devices** from the drop\-down menu\. 
+     + **Deregistered** –The device is no longer registered with the AWS account\. The time stamp next to the status shows the date and local time when the device was first detected to be deregistered\. To remove the device, select the device and choose **Actions**, **Delete Devices**\.
+
+Alexa for Business publishes the number of your shared devices online, offline, and deregistered to Amazon CloudWatch as metrics\. These metrics are inside the namespace **AWS/A4B**, and the metric names are **OnlineSharedDevices**, **OfflineSharedDevices**, and **DeregisteredSharedDevices** \. All of these metrics can be grouped by the metric dimensions **Room Profile** or **Organization**\.
+
 **Note**  
-To prevent your device from being offline, assign your device to a room within 24 hours of the time that you plan on plugging it into the room\. 
+Viewing **AWS/A4B** metrics by **Room Profile** filters out devices in your organization that aren't assigned to a room\. It also allows you to filter results for a specific building with offline devices\. 
 
-To avoid having a device respond to voice commands, unplug the device\. In the rare case where you no longer want to use the device anymore \(for example, if you are giving the device to a new owner\), you can deregister it\. You can register the device again with the Device Setup Tool\. Deregistering devices requires you to re\-set up devices \(otherwise, they might not work\)\.
+**To monitor devices using CloudWatch**
 
-**To deregister a device**
+1. Follow the steps in [View Available Metrics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/viewing_metrics_with_cloudwatch.html) in the *Amazon CloudWatch User Guide*\. Instead of choosing the namespace **EC2**, choose the namespace **AWS/A4B**, and then choose a metric dimension \(**Organization** or **Room Profile**\)\.
+
+1. To set up alarms from CloudWatch when a critical number of devices go offline, follow these steps:
+
+   1. Graph the metric\. For more information, see [Graph a Metric](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph_a_metric.html)\. 
+
+   1. Create an alarm\. For more information, see [Create an Alarm from a Metric on a Graph](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_alarm_metric_graph.html)\. 
+
+**To delete a device**
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
 1. Choose **Shared devices** and select the check box next to the device to deregister\.
 
-1. Choose **Actions**, **Deregister**\.
+1. Choose **Actions**, **Delete Devices**\.
 **Note**  
 This action removes the device from the console\.
 
@@ -71,16 +84,16 @@ You can reset a device to clear all timers, alarms, to\-do lists, shopping lists
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Shared devices** and select the device\(s\) that you want to reset\.
+1. Choose **Shared devices** and select the devices to reset\.
 
 1. Choose **Actions**, **Reset device**\.
 
-Alexa for Business manages device accounts and settings through rooms and room profiles\. When you add devices to a room, change the room of a device, update specific settings in a room profile \(including the wake word, volume limit, and device setup mode\), or when you reset a device, the device must be connected to the internet for the update to complete successfully\. Alexa for Business retries these calls for one hour, and then the device is placed into a **Sync needed** status\. To implement your changes, plug in the Alexa device, ensure that it's connected to WI\-FI, and sync the device\. 
+Alexa for Business manages device accounts and settings through rooms and room profiles\. When you add devices to a room, change the room of a device, update specific settings in a room profile \(including the wake word, volume limit, and device setup mode\), or when you reset a device, the device must be connected to the internet for the update to complete successfully\. Alexa for Business retries these calls for one hour, and then the device is placed into a **Sync needed** status\. To implement your changes, plug in the Alexa device, ensure that it's connected to Wi\-Fi, and sync the device\. 
 
 **To sync a device**
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Shared devices** and select the all the devices with the status **Sync needed** that you want to sync\.
+1. Choose **Shared devices** and select one or more devices with the status **Sync needed**\.
 
 1. Choose **Actions**, **Sync devices**\.

@@ -2,7 +2,15 @@
 
 By default, linking Alexa for Business to Office 365 gives the Alexa for Business client app read access to your organization’s calendars\. Granting full read permissions enables Alexa for Business to default to the organizer’s calendar when the room calendar’s invitation is insufficient to automatically join a meeting\. If you want to grant access to specific room calendars, follow these steps\.
 
-1. Connect to Exchange Online PowerShell\. For more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)\. 
+1. Create a service account for Alexa for Business in your Office 365 tenant:
+
+   1. Sign into Office 365 as an administrator\.
+
+   1. Add a user in your Office 365 account that will use a service account\. For more information, see [Add users individually or in bulk to Office 365](https://support.office.com/en-us/article/add-users-individually-or-in-bulk-to-office-365-admin-help-1970f7d6-03b5-442f-b385-5880b9c256ec?CorrelationId=8d4aa47b-49a9-48ad-87fc-dcd9a595f28c&ui=en-US&rs=en-US&ad=US)\.
+
+      For example, if your domain is "mycompany\.com" and you add a user with the user name of "alexaforbusiness," the email address is "alexaforbusiness@mycompany\.com"\.
+
+1. Open PowerShell and connect to Exchange Online\. For more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)\. 
 
 1. Run the following PowerShell command to create a service account with access to the calendars in your organization:
 

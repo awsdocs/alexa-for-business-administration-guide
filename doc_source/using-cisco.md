@@ -1,14 +1,20 @@
 # Use Cisco TelePresence with Alexa for Business<a name="using-cisco"></a>
 
-You can connect Alexa for Business to your Cisco TelePresence systems to control meetings with your voice\.
+Use Alexa for Business to control your Cisco TelePresence systems and join meetings by using your voice\. Alexa for Business supports the following Cisco video conferencing endpoints:
++ Cisco Telepresence DX, EX, MX, and SX series
++ Cisco Spark Room Kit
 
-To integrate Alexa with your Cisco TelePresence setup, download and install the Alexa for Business gateway\. For more information, see [Use the Alexa for Business Gateway](a4b-gateway.md)\. After you register, you can add the Cisco TelePresence endpoints to control using Alexa\. The Alexa for Business gateway is listening to an Amazon SQS queue for control commands\. When a user invokes the Alexa skill, a request is added to the queue and received by the Alexa for Business gateway\. The gateway processes the request and sends a control command to the Cisco TelePresence endpoint\.
+To have Alexa control your Cisco video conferencing endpoints, run the Alexa for Business Gateway within your local network\. The Alexa for Business Gateway receives control events from Alexa for Business and issues commands to the Cisco video conferencing endpoints in your meeting rooms\. For example, when a user asks Alexa to join a meeting, an event is sent to the gateway\. The gateway processes this event, connects to the Cisco video conferencing endpoint in the room, and then initiates the dial\-in to the meeting\. The following diagram shows the setup and network boundaries\.
 
-You must meet the following requirements to proceed:
-+ You have a Cisco TelePresence  system with firmware version TC7\.3\.12 or CE8 or higher\.
+![\[Setup and network boundaries\]](http://docs.aws.amazon.com/a4b/latest/ag/images/setup-network-boundaries-NEW.png)
+
+For more information, see [Use the Alexa for Business Gateway](a4b-gateway.md)\.
+
+To use Alexa for Business to control your Cisco video conferencing endpoints, you must meet the following requirements:
++ You have a Cisco TelePresence system with firmware version TC7\.3\.12 or CE8 or higher\.
 + You have Windows Server 2008 or later, Windows 7 desktop or later, or a Linux server or choice to run the Alexa for Business gateway\. This can be a virtual or physical machine\.
 + Your locally deployed Alexa for Business gateway is allowed to make outbound HTTPS connections and has local network access to control your Cisco TelePresence system\. Incoming external communication or inbound ports aren't required\.
-+ A conference provider has been added\.
++ Cisco video conferencing endpoints registered with Cisco Spark cloud are currently not supported\.
 
 **To use Cisco TelePresence with Alexa for Business**
 
@@ -49,6 +55,8 @@ You must meet the following requirements to proceed:
    1. Choose the **Cisco TelePresence** model\.
 
    1. Specify the endpoint URL of your Cisco TelePresence endpoint\. For example, "http://10\.0\.1\.42"\. 
+**Note**  
+If you don't specify a protocol, "http" is used\.
 
    1. Choose the Alexa for Business room where the Cisco TelePresence endpoint is located\.
 
@@ -71,12 +79,14 @@ You must meet the following requirements to proceed:
 1. Enter a friendly name, which can be used to control the Cisco endpoint using your voice\. For example, "Alexa, turn on <friendly name>\." Enter an optional description\.
 
 1. Choose **Cisco TelePresence model** and specify the endpoint URL of your Cisco TelePresence endpoint\. For example, "http://10\.0\.1\.42"\.
+**Note**  
+If you don't specify a protocol, "http" is used\.
 
 1. Choose the Alexa for Business room where the Cisco TelePresence endpoint is located and choose **Add**\.
 
 1. Choose **Rooms** and the name of the room where you just assigned the Cisco TelePresence endpoint\.
 
-1. To have the endpoint available in your room, choose **Discover devices**\.
+1. To have the endpoint available in your room, go to the **Smart Home devices** section and choose **Discover devices**\.
 
 You can now use Alexa to control your Cisco TelePresence endpoint using voice\.
 
@@ -92,19 +102,21 @@ You can now use Alexa to control your Cisco TelePresence endpoint using voice\.
 
 **To use HTTPS to connect to your Cisco Telepresence endpoints**
 
-1. To connect Alexa for Business to your Cisco Telepresence systems over Transport Layer Security \(TLS\), the gateway must be able to verify the signature of the certificates\. To enable this, install the root CA and other intermediate CAs that signed the certificate on the host where you run the gateway\. If the Cisco system can't be authenticated, the connection isn't established\. 
+1. Choose one of the following options:
 
-   You can either install the root CA and other intermediate CAs in the certificate store of your gateway host or by specifying the path to certificates in the gateway config file\.
+   1. To connect Alexa for Business to your Cisco Telepresence systems over Transport Layer Security \(TLS\), the gateway must be able to verify the signature of the certificates\. To enable this capability, install the root CA and other intermediate CAs that signed the certificate on the host where you run the gateway\. If the Cisco system can't be authenticated, the connection isn't established\. 
 
-   **"rootCAsFile": "path\\\\to\\\\certs\\\\custom\-certs\.pem"**
+      You can either install the root CA and other intermediate CAs in the certificate store of your gateway host\. You can also specify the path to the certificates in the gateway config file; for example:\.
 
-1. If your Cisco endpoints are configured with a self\-signed certificate, you can also disable the certificate validation to allow the gateway to connect regardless of the certificate in use:
+      **"rootCAsFile": "path\\\\to\\\\certs\\\\custom\-certs\.pem"**
 
-   1. Open the gateway configuration file and change the following configuration value:
+   1. If your Cisco endpoints are configured with a self\-signed certificate, you can also disable the certificate validation to allow the gateway to connect regardless of the certificate in use:
 
-      **"skipSslVerification": true**
+      1. Open the gateway configuration file and change the following configuration value:
 
-   1. To apply the change, restart the gateway\.
+         **"skipSslVerification": true**
+
+1. To apply the change, restart the gateway\.
 
 1. Verify the gateway log file to confirm that the certificate validation works correctly\. If the certificate validation fails, you see the following message in the log file:
 
