@@ -48,11 +48,11 @@ Make sure that `your_domain` is the domain of your organization\. You are prompt
 
    For a single room mailbox:
 
-   `Add-MailboxFolderPermission <room name>:\Calendar -User alexaforbusiness -AccessRights ReadItems`
+   `Add-MailboxFolderPermission <room name>:\Calendar -User alexaforbusiness -AccessRights Editor`
 
    For all room mailboxes:
 
-   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails 'RoomMailbox' | ForEach-Object {Add-MailboxFolderPermission $_":\calendar" -user alexaforbusiness -AccessRights ReadItems}`
+   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails 'RoomMailbox' | ForEach-Object {Add-MailboxFolderPermission $_":\calendar" -user alexaforbusiness -AccessRights Editor}`
 
 1. Link the service account to Alexa for Business\.
 
@@ -92,8 +92,6 @@ Make sure that `your_domain` is the domain of your organization\. You are prompt
 
    1. Send the invite to book the room\.
 
-   1. Say “Alexa, start my meeting” to the Echo device assigned to the room\.
+   1. Say “Alexa, start my meeting” to the Echo device assigned to the room\. Your Echo device prompts you to join the scheduled meeting without asking you for the meeting ID\.
 
-   1. Your Echo device prompts you to join the scheduled meeting without asking you for the meeting ID\.
-
-If you have any issues linking Alexa for Business to Microsoft Exchange, see [Set up Microsoft Exchange Access for Users](connect-exchange.md)\.
+   1. Say, “Alexa, is this room free?” to the Echo device assigned to the room\. Your Echo device returns that the room is booked\.

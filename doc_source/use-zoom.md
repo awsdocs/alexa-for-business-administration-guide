@@ -22,7 +22,7 @@ To use the integration, make sure you're using:
 
    1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-   1. Choose **Conference settings**, **Add provider**, **Zoom** and save the settings\.
+   1. Choose **Conferencing**, **Add provider**, **Zoom** and save the settings\.
 
 1. Enable the Zoom for Alexa skill:
 
@@ -45,8 +45,6 @@ To use the integration, make sure you're using:
    1. Choose the pencil icon to edit the skill configuration\. 
 
    1. For the **Scope value**, type the name of a Zoom room that already exists or will be created in the Zoom web portal\.
-**Note**  
-The scope value can only contain letters, numbers, spaces, and the following special characters: \_ \- = \# ; : ? @ &\. If your Zoom Room name contains any other characters, update your room name in the Zoom admin portal\.
 
 1. Discover your Zoom Room device:
 

@@ -1,14 +1,31 @@
-# Logging Alexa for Business Administration Calls with AWS CloudTrail<a name="cloudtrail"></a>
+# Logging Alexa for Business API Calls with AWS CloudTrail<a name="cloudtrail"></a>
 
-Alexa for Business is integrated with CloudTrail\. CloudTrail is a service that captures API calls made by or on behalf of Alexa for Business in your AWS account and delivers the log files to an Amazon S3 bucket that you specify\. CloudTrail captures all API calls from the Alexa for Business console\. Using the information collected by CloudTrail, you can determine which requests were made, the source IP address for the request, who made the request, and when it was made\. For more information, including how to configure and enable CloudTrail, see the [AWS CloudTrail User Guide](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)\.
+Alexa for Business is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Alexa for Business\. CloudTrail captures all API calls for Alexa for Business as events\. The calls captured include calls from the Alexa for Business console and code calls to the Alexa for Business API operations\. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Alexa for Business\. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**\. Using the information collected by CloudTrail, you can determine the request that was made to Alexa for Business, the IP address from which the request was made, who made the request, when it was made, and additional details\. 
 
-When CloudTrail logging is enabled in your AWS account, API calls made from Alexa for Business on your behalf are tracked in log files\. These records are written together with other AWS service records in a log file\. CloudTrail determines when to create and write to a new file based on time period and file size\.
+To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
 
-You can store your log files in your bucket for as long as you want, or you can define Amazon S3 lifecycle rules to archive or delete log files automatically\. By default, your log files are encrypted using Amazon S3 server\-side encryption \(SSE\)\. To take quick action upon log file delivery, you can choose to have CloudTrail publish Amazon SNS notifications when new log files are delivered\. For more information, see [Configuring Amazon SNS Notifications for CloudTrail](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/configure-sns-notifications-for-cloudtrail.html)\. 
+## Alexa for Business Information in CloudTrail<a name="a4b-info-in-cloudtrail"></a>
 
-CloudTrail log files can contain one or more log entries, with each entry comprised of multiple JSON\-formatted events\. A log entry represents a single request and contains information about the action taken, who generated the request, where they were when they made the request, system information, and information that will vary depending on the type of request\. Every log entry also contains information about who generated the request\. The user identity information in the log helps you determine whether the request was made with root or IAM user credentials, with temporary security credentials for a role or federated user, or by another AWS service\. For more information, see the **userIdentity** field in the [CloudTrail Log Event Reference](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html)\.
+CloudTrail is enabled on your AWS account when you create the account\. When activity occurs in Alexa for Business, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**\. You can view, search, and download recent events in your AWS account\. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html)\. 
 
-Log entries are not in any particular order and are not an ordered stack trace of the public API calls\. Entries for Alexa for Business are identified by the **a4b\.amazonaws\.com** event source\. Sensitive information, such as passwords, authentication tokens, file comments, and file contents, are redacted in log entries\.
+For an ongoing record of events in your AWS account, including events for Alexa for Business, create a trail\. A *trail* enables CloudTrail to deliver log files to an Amazon S3 bucket\. By default, when you create a trail in the console, the trail applies to all AWS Regions\. Currently, events for Alexa for Business only appear in US East \(N\. Virginia\), which is the only available region\. The trail logs events from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you specify\. Additionally, you can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs\. For more information, see the following: 
++ [Overview for Creating a Trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
++ [CloudTrail Supported Services and Integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html#cloudtrail-aws-service-specific-topics-integrations)
++ [Configuring Amazon SNS Notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)
++ [Receiving CloudTrail Log Files from Multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail Log Files from Multiple Accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
+
+All Alexa for Business actions are logged by CloudTrail and are documented in the [Alexa for Business API Reference](https://docs.aws.amazon.com/a4b/latest/APIReference/Welcome.html)\. For example, `CreateRoom`, `AssociateSkillGroupWithRoom`, and `DeleteRoom` all generate entries in CloudTrail log files\. 
+
+Every event or log entry contains information about who generated the request\. The identity information helps you determine the following: 
++ Whether the request was made with root or AWS Identity and Access Management \(IAM\) user credentials\.
++ Whether the request was made with temporary security credentials for a role or federated user\.
++ Whether the request was made by another AWS service\.
+
+For more information, see the [CloudTrail userIdentity Element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)\.
+
+## Understanding Alexa for Business Log File Entries<a name="understanding-a4b-entries"></a>
+
+A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify\. CloudTrail log files contain one or more log entries\. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on\. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order\. 
 
 The following is an example of a CloudTrail log entry for Alexa for Business:
 

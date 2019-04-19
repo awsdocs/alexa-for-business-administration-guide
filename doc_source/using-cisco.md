@@ -4,7 +4,7 @@ Use Alexa for Business to control your Cisco TelePresence systems and join meeti
 + Cisco Telepresence DX, EX, MX, and SX series
 + Cisco Spark Room Kit
 
-To have Alexa control your Cisco video conferencing endpoints, run the Alexa for Business Gateway within your local network\. The Alexa for Business Gateway receives control events from Alexa for Business and issues commands to the Cisco video conferencing endpoints in your meeting rooms\. For example, when a user asks Alexa to join a meeting, an event is sent to the gateway\. The gateway processes this event, connects to the Cisco video conferencing endpoint in the room, and then initiates the dial\-in to the meeting\. The following diagram shows the setup and network boundaries\.
+To have Alexa control your Cisco video conferencing endpoints, run the Alexa for Business gateway within your local network\. The Alexa for Business gateway receives control events from Alexa for Business and issues commands to the Cisco video conferencing endpoints in your meeting rooms\. For example, when a user asks Alexa to join a meeting, an event is sent to the gateway\. The gateway processes this event, connects to the Cisco video conferencing endpoint in the room, and then initiates the dial\-in to the meeting\. The following diagram shows the setup and network boundaries\.
 
 ![\[Setup and network boundaries\]](http://docs.aws.amazon.com/a4b/latest/ag/images/setup-network-boundaries-NEW.png)
 
@@ -64,6 +64,8 @@ If you don't specify a protocol, "http" is used\.
 
    1. Choose **Rooms** and the name of the room where you just assigned the Cisco TelePresence endpoint\.
 
+   1. Choose the gateway group to control your Cisco endpoint\.
+
    1. Choose **Discover devices** to have the endpoint available in your room\.
 
    1. Test the integration by saying “Alexa, start my meeting,” and say the meeting ID and PIN for your meeting when prompted\. 
@@ -85,6 +87,8 @@ If you don't specify a protocol, "http" is used\.
 1. Choose the Alexa for Business room where the Cisco TelePresence endpoint is located and choose **Add**\.
 
 1. Choose **Rooms** and the name of the room where you just assigned the Cisco TelePresence endpoint\.
+
+1. Choose the gateway group to control your endpoint\.
 
 1. To have the endpoint available in your room, go to the **Smart Home devices** section and choose **Discover devices**\.
 
@@ -110,11 +114,9 @@ You can now use Alexa to control your Cisco TelePresence endpoint using voice\.
 
       **"rootCAsFile": "path\\\\to\\\\certs\\\\custom\-certs\.pem"**
 
-   1. If your Cisco endpoints are configured with a self\-signed certificate, you can also disable the certificate validation to allow the gateway to connect regardless of the certificate in use:
+   1. \(Not secure and not recommended\) If your Cisco endpoints are configured with a self\-signed certificate, you can also disable the certificate validation to allow the gateway to connect regardless of the certificate in use\. To do this, open the gateway configuration file and change the following configuration value:
 
-      1. Open the gateway configuration file and change the following configuration value:
-
-         **"skipSslVerification": true**
+      **"skipSslVerification": true**
 
 1. To apply the change, restart the gateway\.
 
@@ -124,7 +126,7 @@ You can now use Alexa to control your Cisco TelePresence endpoint using voice\.
 
 **To debug log files**
 
-1. Go to one of the following locations to see the log files written by the Alexa for Business Gateway:
+1. Go to one of the following locations to see the log files written by the Alexa for Business gateway:
    + On Windows: C:\\ProgramData\\
    + On Linux: /var/log/a4b\-gateway/gateway\.log
 

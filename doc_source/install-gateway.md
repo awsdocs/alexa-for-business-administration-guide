@@ -2,6 +2,15 @@
 
 The gateway is available on the Alexa for Business console\. 
 
+To install the Alexa for Business gateway, you need the following:
++ One of the following virtual or physical machines to run the Alexa for Business gateway:
+  + Windows Server 2008 or later
+  + Windows 7 desktop or later
+  + Linux server
++ A minimum of 1 GB available disk space\.
++ A minimum of 2 GB of RAM\.
++ Your locally deployed Alexa for Business gateway is allowed to make outbound HTTPS connections\. It also has local network access to control your Cisco TelePresence or Polycom Group Series endpoints\. \(Incoming external communication or inbound ports aren't required\.\)
+
 **To prepare for installation**
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
@@ -14,13 +23,9 @@ The gateway is available on the Alexa for Business console\.
 
 1. Run the installer on your Windows server as an administrator: right\-click on the downloaded file and choose **Run as administrator**\.
 
-1. When prompted, enter the IAM access keys and secret keys of the IAM users that you created previously\.
+1. When prompted, enter the user credentials to sign into your Cisco TelePresence or Polycom Group Series endpoints\.
 
-1. Enter a unique name for your gateway\.
-
-1. \(Optional\) Enter a description to identify the gateway in the Alexa for Business console\.
-
-1. When prompted, enter the user credentials to sign into your Cisco TelePresence appliances\.
+1. Register your gateway\. If it's enabled, the Alexa for Business registration tool starts automatically\. You can also manually run the registration tool as an administrator at **C:\\Program Files\\Amazon\\AlexaForBusinessGateway\\register\.exe**\.
 
 1. Open the Alexa for Business console again, refresh **Alexa for Business Gateways**, and confirm that your gateway is listed\.
 
@@ -51,7 +56,7 @@ The gateway is available on the Alexa for Business console\.
 
      \(Systemd\): sudo cp service/systemd/alexaforbusinessgateway\.service /usr/lib/systemd/system/alexaforbusinessgateway\.service
 
-1. Set the credentials of your Cisco TelePresence systems:
+1. Set the credentials of your Cisco TelePresence or Polycom Group Series endpoints:
 
     sudo nano /etc/alexaforbusinessgateway/secrets\.cfg
 

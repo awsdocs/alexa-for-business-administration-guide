@@ -2,7 +2,7 @@
 
 A room is a physical location where you can put your Alexa devices\. Examples of rooms include conference rooms, lobbies, or hotel rooms\.
 
-We recommend naming your rooms with unique and meaningful identifiers that can be logically parsed by a third party\. Instead of “Room 12” or “Suite 104,” pick a name like “ORD\_01\_0201” or “SEA\_38\_0021\.” The ResolveRoom API action exposes the room name to third\-party skill developers, including any skills that you develop privately for your organization\. If you are planning to enable smart home skills in your room, we recommend naming rooms with only alphanumeric characters and the following special characters \(no dots, no spaces\): \_ \- = \# ; : ? @ &\. 
+We recommend naming your rooms with unique and meaningful identifiers that can be logically parsed by a third party\. Instead of “Room 12” or “Suite 104,” pick a name like “ORD\_01\_0201” or “SEA\_38\_0021\.” The ResolveRoom API action exposes the room name to third\-party skill developers, including any skills that you develop privately for your organization\. 
 
 **To create a room**
 

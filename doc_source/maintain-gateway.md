@@ -82,7 +82,7 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | skipSslVerification | Set to true to ignore SSL validation errors when the gateway is connecting to your video conferencing endpoints | false | Boolean | 
 | credentials | Defines which AWS credentials to use |  | Null or object | 
 | localLog | Settings to have gateway log to a local file |  | Object | 
-| remoteLog | Settings to have gateway log to AWS Cloudwatch |  | Object | 
+| remoteLog | Settings to have gateway log to Amazon CloudWatch |  | Object | 
 | maintenance | Maintenance settings for the gateway, such as the update window and service manager |  /path/to/root\-ca/cert\.pem  | Object | 
 | rootCAsFile | Maintenance settings for the gateway, such as the update window and service manager |  | String | 
 | metrics |  |  | Object | 
