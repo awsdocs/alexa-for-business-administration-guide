@@ -8,3 +8,4 @@ After you set up Alexa for Business, you can add, edit, or delete rooms, room pr
 + [Managing Devices](manage-devices.md)
 + [Managing Skills](manage-skills.md)
 + [Managing Skill Groups](manage-skill-groups.md)
++ [Sending Announcements](announcements.md)

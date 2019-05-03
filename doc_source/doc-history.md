@@ -4,6 +4,7 @@ The following table describes important changes to the Alexa for Business Admini
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Send Alexa announcements to one or more rooms\. Alexa will wake and speak the announcement that you create\.](#doc-history) | For more information, see [Sending Announcements](https://docs.aws.amazon.com/a4b/latest/ag/announcements.html) in the Alexa for Business Administrator’s Guide\. | May 2, 2019 | 
 | [Use Polycom Trio with Alexa for Business](#doc-history) | For more information, see [Use Polycom Trio with Alexa for Business](https://docs.aws.amazon.com/a4b/latest/ag/using-polycom-trio.html) in the Alexa for Business Administrator’s Guide\. | April 16, 2019 | 
 | [Users can ask Alexa to find an available meeting room](#doc-history) | For more information, see [Managing Conferencing and Room Booking](https://docs.aws.amazon.com/a4b/latest/ag/manage-conferencing.html) in the Alexa for Business Administrator’s Guide\. | April 3, 2019 | 
 | [Publish private business skills with Alexa Skill Blueprints](#doc-history) | For more information, see [Alexa Skill Blueprints](https://docs.aws.amazon.com/a4b/latest/ag/blueprints.html) in the Alexa for Business Administrator’s Guide\. | March 27, 2019 | 

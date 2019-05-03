@@ -31,6 +31,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Private Skills](private-skills.md)
       + [Alexa for Business Blueprints](blueprints.md)
    + [Managing Skill Groups](manage-skill-groups.md)
+   + [Sending Announcements](announcements.md)
 + [Managing Conferencing and Room Booking](manage-conferencing.md)
    + [Understanding Alexa-enabled Conferencing](setup-conferencing.md)
       + [Compatible Conference Devices](compatible-devices.md)
