@@ -1,4 +1,4 @@
-# AVS Permissions<a name="AVS-permissions"></a>
+# AVS permissions<a name="AVS-permissions"></a>
 
 To register an Alexa Voice Service \(AVS\) device with Alexa for Business, you must first give access to the Alexa built\-in device maker\. To do this, use the following steps to create an IAM role in the Alexa for Business console that allows the AVS device maker to register and manage devices with Alexa for Business on your behalf\.
 

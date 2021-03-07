@@ -1,4 +1,4 @@
-# Private Skills<a name="private-skills"></a>
+# Private skills<a name="private-skills"></a>
 
 In addition to public Alexa skills, developers can use the Alexa Skills Kit to create and publish skills privately to Alexa for Business organizations\. This way, developers do not need to certify or have the skill available with all other Alexa skills\.
 
@@ -6,10 +6,10 @@ Public and private skills share many of the same features\. They are both develo
 
 A private skill has the following characteristics:
 + The skill isn't discoverable in the public Alexa Skills Store\.
-+ The skill developer can whitelist which organizations can review the skill, including its description and functionality, as well as enable it\.
++ The skill developer can choose which organizations can review the skill, including its description and functionality, as well as enable it\.
 + The skill developer can control which organizations can enable the private skill and therefore limit attempts to authenticate against back\-end systems for account linking\.
 + The skill does not need to go through Amazon's certification process for public skill publishing and for every skill change\. For more information on public skill certification, see [Certification Requirements for Custom Skills](https://developer.amazon.com/docs/custom-skills/certification-requirements-for-custom-skills.html)\.
-+ The IT admin has additional control to review and enable the skill for the organization through the AWS console\.
++ The IT admin has additional control to review and enable the skill for the organization through the AWS Management Console\.
 + The IT admin can use Alexa for Business to control whether enrolled users can view and enable a private skill\. 
 
 If the skill is intended for a limited audience, such as your organization or partner organizations, it’s a good candidate for a private skill\.

@@ -1,6 +1,6 @@
-# Use the Alexa for Business Gateway<a name="a4b-gateway"></a>
+# Use the Alexa for Business gateway<a name="a4b-gateway"></a>
 
-The Alexa for Business gateway enables you to connect Alexa for Business to your Cisco TelePresence and Polycom Group Series endpoints to control meetings with your voice\. The gateway software runs on your on\-premises hardware and securely proxies conferencing directives from Alexa for Business to your Cisco endpoint\. The gateway is available for both Windows and Linux\.
+The Alexa for Business gateway enables you to connect Alexa for Business to your Cisco Webex and Poly Group Series endpoints to control meetings with your voice\. The gateway software runs on your on\-premises hardware and securely proxies conferencing directives from Alexa for Business to your Cisco endpoint\. The gateway is available for both Windows and Linux\.
 
 The gateway needs two pairs of AWS credentials to communicate with Alexa for Business\. We recommend that you create two limited\-access IAM users for your Alexa for Business gateways, one for installing the gateway and one for operating the gateway\.
 
@@ -23,6 +23,6 @@ The gateway needs two pairs of AWS credentials to communicate with Alexa for Bus
 1. To create a second user that is used to run the Alexa for Business gateway, repeat steps 2\-7\. Enter a user name \(for example, AlexaforBusinessGateway\) and choose **AlexaForBusinessGatewayExecution** in the list of policies\.
 
 **Topics**
-+ [Installing the Gateway](install-gateway.md)
-+ [Running Multiple Gateways](run-gateways.md)
-+ [Maintaining the Gateway](maintain-gateway.md)
++ [Install the gateway](install-gateway.md)
++ [Run multiple gateways](run-gateways.md)
++ [Maintain the gateway](maintain-gateway.md)

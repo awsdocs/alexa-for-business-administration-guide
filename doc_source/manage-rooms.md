@@ -1,8 +1,8 @@
-# Managing Rooms<a name="manage-rooms"></a>
+# Manage rooms<a name="manage-rooms"></a>
 
 A room is a physical location where you can put your Alexa devices\. Examples of rooms include conference rooms, lobbies, or hotel rooms\.
 
-We recommend naming your rooms with unique and meaningful identifiers that can be logically parsed by a third party\. Instead of “Room 12” or “Suite 104,” pick a name like “ORD\_01\_0201” or “SEA\_38\_0021\.” The ResolveRoom API action exposes the room name to third\-party skill developers, including any skills that you develop privately for your organization\. 
+We recommend naming your rooms with unique and meaningful identifiers that can be logically parsed by a third party\. Instead of "Room 12" or "Suite 104," pick a name like "ORD\_01\_0201" or "SEA\_38\_0021\." The ResolveRoom API action exposes the room name to third\-party skill developers, including any skills that you develop privately for your organization\. 
 
 **To create a room**
 
@@ -46,9 +46,9 @@ If you no longer need a room, you can delete it\. This stops the Alexa device in
 
 1. Choose **Delete room**, **Delete**\.
 
-After your room is deleted, your Alexa devices are automatically unassigned and can be assigned to a different room\. For more information, see [Managing Devices](manage-devices.md)\.
+After your room is deleted, your Alexa devices are automatically unassigned and can be assigned to a different room\. For more information, see [Manage devices](manage-devices.md)\.
 
-Echo, Echo Dot, and Echo Plus devices use on\-device keyword spotting to detect a wake word\. When they detect a wake word, the light ring around the top of the device turns blue to indicate that Alexa is streaming audio to the cloud\. These voice recordings are anonymously stored in the cloud\. You can't view or listen to the interactions that users have with the Alexa devices in a room\. You can choose to delete voice recordings from all of the devices in a specific room\. If you delete these recordings, it might degrade your experience using voice features\. 
+Echo, Echo Dot, and Echo Plus devices use on\-device keyword spotting to detect a wake word\. When they detect a wake word, the light ring around the top of the device turns blue to indicate that Alexa is streaming audio to the cloud\. These voice recordings are anonymously stored in the cloud\. You can't view or listen to the interactions that users have with the Alexa devices in a room\. You can choose to delete voice recordings from all of the devices in a specific room\. If you delete these recordings, it might degrade your experience using voice features\.
 
 **To delete voice recordings**
 
@@ -57,3 +57,5 @@ Echo, Echo Dot, and Echo Plus devices use on\-device keyword spotting to detect 
 1. Choose **Rooms** and select a room\.
 
 1.  Choose **Delete voice recordings**, **Delete**\.
+**Note**  
+You can also ask Alexa to delete voice recordings for a particular device by saying "Alexa, delete what I just said" or "Alexa, delete what I said today"\.

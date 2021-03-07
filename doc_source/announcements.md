@@ -1,8 +1,8 @@
-# Sending Announcements<a name="announcements"></a>
+# Send announcements<a name="announcements"></a>
 
 You can send Alexa announcements to one or more rooms in your Alexa for Business organization\. When you do this, Alexa wakes and speaks the announcement that you enter, for the rooms that you select\.
 
-You can create an announcement from the Alexa for Business console, or with the SendAnnoucement API\. For more information, see the [Alexa for Business API Reference](https://docs.aws.amazon.com/a4b/latest/APIReference/Welcome.html)\. The API allows developers to trigger a text or audio announcement on Alexa for Business\-managed endpoints from any app\. For example, when a threshold is reached on an IoT sensor, send an alert to the shared devices in an operations team area\. Or, you can turn your Alexa for Business deployment into a PA system\.
+You can create an announcement from the Alexa for Business console, or with the SendAnnouncement API\. For more information, see the [Alexa for Business API Reference](https://docs.aws.amazon.com/a4b/latest/APIReference/Welcome.html)\. The API allows developers to trigger a text or audio announcement on Alexa for Business\-managed endpoints from any app\. For example, when a threshold is reached on an IoT sensor, send an alert to the shared devices in an operations team area\. Or, you can turn your Alexa for Business deployment into a PA system\.
 
 **Note**  
 Systems using the API need IAM permissions\.

@@ -1,6 +1,6 @@
-# Managing Skills<a name="manage-skills"></a>
+# Manage skills<a name="manage-skills"></a>
 
-Skills are voice\-driven capabilities that enhance the functionality of your Alexa device\. Alexa for Business gives you access to all Alexa skills\. To enable skills for your devices, you must first enable it for your organization and then add it to one or more skill groups that are assigned to your rooms\. For more information, see [Managing Skill Groups](manage-skill-groups.md)\.
+Skills are voice\-driven capabilities that enhance the functionality of your Alexa device\. Alexa for Business gives you access to all Alexa skills\. To enable skills for your devices, you must first enable it for your organization and then add it to one or more skill groups that are assigned to your rooms\. For more information, see [Manage skill groups](manage-skill-groups.md)\.
 
 **To enable a skill**
 

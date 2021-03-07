@@ -1,6 +1,6 @@
-# Running Multiple Gateways<a name="run-gateways"></a>
+# Run multiple gateways<a name="run-gateways"></a>
 
-You can run multiple gateways to eliminate a single point of failure\. You can also run a gateway in each of your locations to lower the latency between the gateway and your Cisco or Polycom endpoints\. This is also an option if you want to run the gateway on different network subnets\.
+You can run multiple gateways to eliminate a single point of failure\. You can also run a gateway in each of your locations to lower the latency between the gateway and your Cisco or Poly endpoints\. This is also an option if you want to run the gateway on different network subnets\.
 
 The following are two examples of how to set up multiple gateways:
 
@@ -15,7 +15,7 @@ You can add a gateway group to run a gateway in a different location, and choose
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Conferencing settings**, **Alexa for Cisco TelePresence/Polycom Group Series**, **Add gateway group**\.
+1. Choose **Conferencing settings**, **Alexa for Cisco Webex/Poly Group Series**, **Add gateway group**\.
 
 1. Enter the **Name** and an optional description, and choose **Add gateway group**\.
 
@@ -27,6 +27,6 @@ If you need to add a gateway to a different group, first remove the gateway, the
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Conferencing settings**, **Alexa for Cisco TelePresence/Polycom Group Series**, **Remove gateway group**, and **Remove**\.
+1. Choose **Conferencing settings**, **Alexa for Cisco Webex/Poly Group Series**, **Remove gateway group**, and **Remove**\.
 
 1. Alexa for Business can no longer control the conferencing endpoints that were controlled with this group\.

@@ -1,6 +1,6 @@
-# Managing Devices<a name="manage-devices"></a>
+# Manage devices<a name="manage-devices"></a>
 
-You can set up your Alexa devices \(Amazon Echo, Echo Dot, or Echo Plus\) using the Device Setup Tool\. This connects your device to your Wi\-Fi network and registers it with Alexa for Business\. You can also use the Alexa Companion app to set up your devices using your Amazon\.com or Amazon Business account, then import your devices into Alexa for Business\. For more information, see [Import Your Devices](getting-started.md#import)\.
+You can set up your Alexa devices \(Amazon Echo, Echo Dot, or Echo Plus\) using the Device Setup Tool\. This connects your device to your Wi\-Fi network and registers it with Alexa for Business\. You can also use the Alexa Companion app to set up your devices using your Amazon\.com or Amazon Business account, then import your devices into Alexa for Business\. For more information, see [Import your devices](getting-started.md#import)\.
 
 After you set up your devices, you can assign them to your rooms\.
 
@@ -19,13 +19,24 @@ If the device has already been set up before, you can manually enter setup mode 
 
 1. Open the Device Setup Tool, which discovers your device\.
 **Note**  
-If the Device Setup Tool doesn’t discover your devices, choose **Discover devices**\.
+If the Device Setup Tool doesn’t discover your devices, choose **Start setup**\.
 
-1. Choose the devices to set up and choose **Set up devices**\.
+1. Select the network profile to associate with your devices, and choose **Save**\.
+   + For information about how to create a network profile, see [Manage network profiles](manage-network-profiles.md)\.
 
-1. Enter your Wi\-Fi network details and choose **Next**\.
+1. After selecting the network profile and verifying the network configuration is accurate, choose **Next**\.
 
-The Device Setup Tool connects your devices to your Wi\-Fi network and registers them with Alexa for Business\.
+1. Put your Alexa devices into setup mode by powering them on for the first time, or by holding the action button on the top of the Echo device\.
+
+1. From the **Device setup** home page, choose **Start setup** to scan for all Alexa devices in setup mode nearby and register them to your Alexa for Business organization\.
+**Note**  
+If you don't want to set up all Alexa devices in setup mode near your computer, choose **Select devices** and select from the list the devices to set up\. To download a \.csv file with the MAC address for your selected devices, choose **Download MAC info**\. 
+
+1. Wait for the tool to complete\. You can monitor progress in the tool to see which device is being set up, as well as the status of each device \(**Successful** or **Failed**\)\.
+**Note**  
+After the status for a device changes to **Successful**, you can unplug the device even if the light ring is still orange\. If all devices show as **Failed**, make sure that you have a strong connection to the network and that the Wi\-Fi information is entered correctly\. 
+
+The Device Setup Tool connects your devices to your Wi\-Fi network and registers them with Alexa for Business\. For information about how to create a network profile, see [Manage network profiles](manage-network-profiles.md)\.
 
 **To assign devices to a room**
 
@@ -49,11 +60,10 @@ We recommend that you label the devices with the room to help ensure that the de
    + **Device name** – The name of the device\.
    + **Assigned room** – The room to which the device is assigned\.
    + **Status** – The status of the device, including the network connection status of the skills and settings being applied to the device\.
-     + **Online** – The device is connected to the network and all skills and settings have been applied\.
-     + **Offline** – The device isn’t connected to the network\. The device might be unplugged or the network might not be working\. The time stamp next to the status shows the date and local time when the device was first detected to be offline\. 
-     + **Sync in progress** – The device is connected to the network, and Alexa for Business is applying skills and settings to the device\.
-     + **Sync needed** –The device is connected to the network, but not all skills and settings have been applied to the device\. This usually happens when the device was offline when Alexa for Business tried to apply all skills and settings\. To sync the device, choose **Sync**\. To sync multiple devices with this status, select all the devices from the table and choose **Sync devices** from the drop\-down menu\. 
-     + **Deregistered** –The device is no longer registered with the AWS account\. The time stamp next to the status shows the date and local time when the device was first detected to be deregistered\. To remove the device, select the device and choose **Actions**, **Delete Devices**\.
+     + **Synced** – All skills and settings are applied to the device\.
+     + **In progress** – The device is connected to the network, and Alexa for Business is applying skills and settings to the device\.
+     + **Failed** –The device could not be sync\. For more information, check the **Failure** column\.
+     + **Deregistered** –This device has been factory reset, or put into device setup mode and not set up properly\. Please set up this device again using the **Device Setup Tool**\.
 
 Alexa for Business publishes the number of your shared devices online, offline, and deregistered to Amazon CloudWatch as metrics\. These metrics are inside the namespace **AWS/A4B**\. The metric names are **OnlineSharedDevices**, **OfflineSharedDevices**, and **DeregisteredSharedDevices** \. All of these metrics can be grouped by the metric dimensions **Room Profile** or **Organization**\.
 

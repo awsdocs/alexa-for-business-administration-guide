@@ -1,8 +1,8 @@
-# Managing Room Profiles<a name="manage-profiles"></a>
+# Manage room profiles<a name="manage-profiles"></a>
 
 To simplify the process of creating and managing rooms, first define room profiles\. A room profile contains the settings for your Alexa devices, so that they can provide you with weather, time, and other location\-based information\. For example, you can create a room profile that contains the Alexa settings that apply to all rooms in the same building\.
 
-If you want to offer room booking to your users, Alexa searches all rooms in a room profile when receiving requests like “Alexa, find a room\.” To optimize room searching, you can create a room profile that contains all rooms in the same building, or on the same floor \(depending on your office size\)\.
+If you want to offer room booking to your users, Alexa searches all rooms in a room profile when receiving requests like "Alexa, find a room\." To optimize room searching, you can create a room profile that contains all rooms in the same building, or on the same floor \(depending on your office size\)\.
 
 When you create a room, you must select a room profile\. If you have not created one, a default room profile is provided\. You can modify the settings, including the default room profile, at any time\.
 
@@ -19,10 +19,12 @@ When you create a room, you must select a room profile\. If you have not created
    + **Wake word** – Select the voice command that turns on the device\.
    + **Temperature units** – Choose **Fahrenheit** or **Celsius**\.
    + **Distance units** – Choose **Feet** or **Meters**\.
-   + **Max volume** – Choose a value between **6**–**10** to limit the volume output of the device to this value\.
+   + **Max volume** – Choose a value between **4**–**10** to limit the volume output of the device to this value\.
    + **Device setup mode** – Choose **On** to allow users to hold the action button for 7 seconds to put the device into setup mode\. Otherwise, choose **Off**\.
    + **Outbound calling** – Choose **Enable** or **Disable** to specify the ability to make outbound PSTN phone calls from the Echo devices\.
    + **Address book** – Select the address book you want to assign to the room profile\.
+   + **Data use policy** – Choose **Enable** \(the default\) or **Disable** to specify whether voice recordings may be manually reviewed to improve our services\. 
+   + **Meeting room settings** – For more information about these settings, see [Configure meeting room settings using Alexa for Business](room-settings.md)\.
 
 1. Choose **Create**\.
 

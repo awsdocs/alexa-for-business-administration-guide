@@ -1,4 +1,4 @@
-# Installing the Gateway<a name="install-gateway"></a>
+# Install the gateway<a name="install-gateway"></a>
 
 The gateway is available on the Alexa for Business console\. 
 
@@ -9,13 +9,13 @@ To install the Alexa for Business gateway, you need the following:
   + Linux server
 + A minimum of 1 GB available disk space\.
 + A minimum of 2 GB of RAM\.
-+ Your locally deployed Alexa for Business gateway is allowed to make outbound HTTPS connections\. It also has local network access to control your Cisco TelePresence or Polycom Group Series endpoints\. \(Incoming external communication or inbound ports aren't required\.\)
++ Your locally deployed Alexa for Business gateway is allowed to make outbound HTTPS connections\. It also has local network access to control your Cisco Webex or Poly Group Series endpoints\. \(Incoming external communication or inbound ports aren't required\.\)
 
 **To prepare for installation**
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Conferencing**, **Conferencing equipment skills**, **Alexa for Cisco TelePresence**, and **Download gateway**\.
+1. Choose **Conferencing**, **Conferencing equipment skills**, **Alexa for Cisco Webex**, and **Download gateway**\.
 
 1. Select the package for your operating system and choose **Download**\.
 
@@ -23,7 +23,7 @@ To install the Alexa for Business gateway, you need the following:
 
 1. Run the installer on your Windows server as an administrator: right\-click on the downloaded file and choose **Run as administrator**\.
 
-1. When prompted, enter the user credentials to sign into your Cisco TelePresence or Polycom Group Series endpoints\.
+1. When prompted, enter the user credentials to sign into your Cisco Webex or Poly Group Series endpoints\.
 
 1. Register your gateway\. If it's enabled, the Alexa for Business registration tool starts automatically\. You can also manually run the registration tool as an administrator at **C:\\Program Files\\Amazon\\AlexaForBusinessGateway\\register\.exe**\.
 
@@ -56,7 +56,7 @@ To install the Alexa for Business gateway, you need the following:
 
      \(Systemd\): sudo cp service/systemd/alexaforbusinessgateway\.service /usr/lib/systemd/system/alexaforbusinessgateway\.service
 
-1. Set the credentials of your Cisco TelePresence or Polycom Group Series endpoints:
+1. Set the credentials of your Cisco Webex or Poly Group Series endpoints:
 
     sudo nano /etc/alexaforbusinessgateway/secrets\.cfg
 

@@ -1,14 +1,14 @@
-# Alexa for Business Blueprints<a name="blueprints"></a>
+# Alexa for Business blueprints<a name="blueprints"></a>
 
-Any member of an Alexa for Business organization can publish private business skills to your organization within minutes using Alexa for Business Blueprints\. After a user builds a blueprint, you can review and publish the skill to use across your company with any Alexa\-enabled device\. There are two blueprints designed specifically for business use\. The **Business Q&A** blueprint is a template that users can customize with their own questions and answers related to your organization\. The **Onboard Guide** blueprint helps new employees get up to speed in their new roles with specialized how\-to questions about the team and the office\. For more information about how to use Alexa for Business Blueprints, see [Create Alexa Experiences for Your Organization](https://aws.amazon.com/alexaforbusiness/blueprints)\.
+Any member of an Alexa for Business organization can publish private business skills to your organization within minutes using Alexa for Business blueprints\. After a user builds a blueprint, you can review and publish the skill to use across your company with any Alexa\-enabled device\. There are two blueprints designed specifically for business use\. The **Business Q&A** blueprint is a template that users can customize with their own questions and answers related to your organization\. The **Onboard Guide** blueprint helps new employees get up to speed in their new roles with specialized how\-to questions about the team and the office\. For more information about how to use Alexa for Business Blueprints, see [Create Alexa Experiences for Your Organization](http://aws.amazon.com/alexaforbusiness/blueprints)\.
 
-**To create and publish private skills with Alexa for Business Blueprints**
+**To create and publish private skills using blueprints**
 
 1. Invite your employees to create blueprint skills:
 
    1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-   1. From the dashboard, under **Create Alexa Skills, **choose **send an email**\.
+   1. From the dashboard, under **Create Alexa Skills**, choose **send an email**\.
 
    1. Edit the email as needed and send it to your employees\.
 

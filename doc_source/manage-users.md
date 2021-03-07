@@ -1,4 +1,4 @@
-# Managing Users<a name="manage-users"></a>
+# Manage users using Alexa for Business<a name="manage-users"></a>
 
 You can invite users to connect their personal Alexa account with your organization\. When you send an invitation to a user, they receive an email with a temporary URL that allows them to join your organization after logging in with their Amazon account\. When they join your organization, they gain access to the following features on their Alexa devices, both at home and at work:
 + Discovering and enabling all the private skills that you make available to users\.
@@ -9,8 +9,8 @@ You can invite users to connect their personal Alexa account with your organizat
 In addition to the benefits available to users after joining your organization, you can require that users restrict any calendar accounts that they have linked and that match the domain of your service account configured in the **Calendar** section of the Alexa for Business console\. 
 
 **Topics**
-+ [Set up Enrollment](enroll-users.md)
-+ [Invite and Remove Users](add-users.md)
-+ [Set up Microsoft Exchange Access for Users](connect-exchange.md)
-+ [Require Users to Restrict Calendars to Voice](voice-restrict.md)
-+ [Instruct Users to Use the Alexa Smart Scheduling Assistant](scheduling-assistant.md)
++ [Set up user invitations](enroll-users.md)
++ [Invite users to join your organization](add-users.md)
++ [Set up Microsoft Exchange access for users](connect-exchange.md)
++ [Require users to restrict calendars to voice](voice-restrict.md)
++ [Instruct users to use the Alexa Smart Scheduling Assistant](scheduling-assistant.md)

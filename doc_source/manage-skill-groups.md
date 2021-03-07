@@ -1,4 +1,4 @@
-# Managing Skill Groups<a name="manage-skill-groups"></a>
+# Manage skill groups<a name="manage-skill-groups"></a>
 
 Skill groups are collections of skills that Alexa for Business uses to enable skills on the Alexa devices in your rooms\. For example, you can define a skill group with all the skills for your conference rooms\. When you assign an Alexa device to a room, Alexa for Business enables the skills in the skill groups assigned to the room\.
 

@@ -1,4 +1,4 @@
-# Instruct Users to Use the Alexa Smart Scheduling Assistant<a name="scheduling-assistant"></a>
+# Instruct users to use the Alexa Smart Scheduling Assistant<a name="scheduling-assistant"></a>
 
 Alexa for Business allows enrolled users to connect their work calendar to Alexa\. They can then use the Alexa Smart Scheduling Assistant to add, move, or cancel meetings or ask Alexa about what meetings are on their calendar\. They can also invite other users to join conference calls scheduled on their calendar\. 
 
@@ -15,7 +15,7 @@ Enrolled users can perform any of the following procedures\.
 
 1. Choose your calendar from the list of supported providers, choose **Link**, and follow the steps\.
 **Note**  
-You may need to provide sign\-in information for your calendar account and verify that you want to give Alexa access to it\. To link your Exchange calendar to Alexa, your IT administrator must set up Exchange\. For more information, see [Set up Microsoft Exchange Access for Users](connect-exchange.md)\.
+You may need to provide sign\-in information for your calendar account and verify that you want to give Alexa access to it\. To link your Exchange calendar to Alexa, your IT administrator must set up Exchange\. For more information, see [Set up Microsoft Exchange access for users](connect-exchange.md)\.
 
 1. Set your work calendar as the default calendar for new events\.
 
@@ -50,7 +50,7 @@ You may need to provide sign\-in information for your calendar account and verif
 **Note**  
 Emergency services, such as 911, are not supported\. For more information, see [Alexa Calling and Messaging FAQs](https://www.amazon.com/gp/help/customer/display.html/ref=augcmfaqlink4/ref=s9_acss_bw_cg_augfaq_md4_w?nodeId=201602230&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-10&pf_rd_r=18VQ2Z66EYXW8K2E63SK&pf_rd_t=101&pf_rd_p=28d33dbd-44c2-45cb-a990-45d2bfc038a0&pf_rd_i=16713667011#GUID-1CDA0A16-3D5A-47C1-9DD8-FDEDB10381A3__SECTION_6C259AE49F0C4C94B3BBDE26B09FC8A4)\.
 
-## Troubleshooting<a name="troubleshoot-assistant"></a>
+## Troubleshoot issues<a name="troubleshoot-assistant"></a>
 
 If you experience any of the following issues with the Alexa Smart Scheduling Assistant, try these steps:
 + **I can't schedule a meeting with a contact, but I can schedule an event\.**

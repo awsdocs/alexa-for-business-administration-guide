@@ -1,4 +1,4 @@
-# Managing Address Books<a name="manage-address-books"></a>
+# Manage address books<a name="manage-address-books"></a>
 
 To call contacts from your shared devices, you must first create an address book and assign it to the room profile associated with the rooms where the devices are assigned\. You can create multiple address books, but you can only assign one address book to a room profile\.
 
@@ -6,7 +6,7 @@ To call contacts from your shared devices, you must first create an address book
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Calls**, **Create address book**, and enter a unique name for the address book\.
+1. Choose **Directory**, **Create address book**, and enter a unique name for the address book\.
 
 **To assign an address book to a room profile**
 
@@ -20,7 +20,7 @@ To call contacts from your shared devices, you must first create an address book
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Calls** and select the name of the address book to edit\.
+1. Choose **Directory** and select the name of the address book to edit\.
 
 1. Edit the values for **Name** and **Description**, and then choose **Save**\.
 
@@ -28,6 +28,6 @@ To call contacts from your shared devices, you must first create an address book
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
-1. Choose **Calls** and select the name of the address book to delete\.
+1. Choose **Directory** and select the name of the address book to delete\.
 
 1.  Choose **Delete address book**, **Delete**\.

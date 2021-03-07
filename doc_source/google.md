@@ -1,6 +1,6 @@
 # Link Alexa for Business to Google G Suite<a name="google"></a>
 
-The following versions of G Suite are supported:
+You can link Alexa for Business to the following versions of G Suite:
 + G Suite Basic
 + G Suite Business
 + G Suite Enterprise
@@ -35,6 +35,6 @@ If you already linked your account and want to enable room booking, you must re\
 
    1. Choose **Save**\.
 
-1. Say “Alexa, start the meeting” to the Echo device assigned to the room\. Your Echo device automatically dials into your meeting without prompting you for a meeting ID\.
+1. Say "Alexa, start the meeting" to the Echo device assigned to the room\. Your Echo device automatically dials into your meeting without prompting you for a meeting ID\.
 
 1. To test room booking, say "Alexa, is this room free?" to the Echo device in the room\. Your Echo device returns that the room is booked\.

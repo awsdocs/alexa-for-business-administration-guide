@@ -1,4 +1,4 @@
-# Firewall and Network Requirements<a name="firewall-network"></a>
+# Firewall and network requirements<a name="firewall-network"></a>
 
 To join meetings and make calls from your Echo devices, you must have the following ports and protocols:
 

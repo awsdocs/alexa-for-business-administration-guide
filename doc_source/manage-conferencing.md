@@ -1,13 +1,10 @@
-# Managing Conferencing and Room Booking<a name="manage-conferencing"></a>
+# Manage Alexa in meeting rooms using Alexa for Business<a name="manage-conferencing"></a>
 
-After the calendaring system in Alexa for Business is linked, users can ask Alexa to control existing video conferencing equipment with their voice\. They can also use Alexa to find and reserve available meeting rooms in the office\. If the room isn't available, Alexa can tell them who made the reservation\.
+Alexa for Business simplifies meeting room experiences for your employees\. Alexa enables you to simplify day\-to\-day tasks, build a smarter workplace, and offer a differentiated employee experience\. You can control conferencing systems, check room availability, and book rooms with just your voice\. For example, say "Alexa, join my meeting" and Alexa finds the upcoming meeting from the calendar, turns on the display, and connects you to the meeting\. Alexa for Business integrates with popular video conferencing devices, room control systems, meeting room scheduling solutions, and calendar systems\. You can also use Alexa for Business in your meeting rooms to offer your employees a natural interface to report service and equipment issues, answer frequently asked questions, and provide a company news briefing by building private skills\.
 
 **Topics**
-+ [Understanding Alexa\-enabled Conferencing](setup-conferencing.md)
-+ [Use Zoom Rooms with Alexa for Business](use-zoom.md)
-+ [Use Cisco TelePresence with Alexa for Business](using-cisco.md)
-+ [Use Polycom Group Series with Alexa for Business](using-polycom.md)
-+ [Use Polycom Trio with Alexa for Business](using-polycom-trio.md)
-+ [Link Alexa for Business to Your Calendar System](manage-calendaring.md)
-+ [Use the Alexa for Business Gateway](a4b-gateway.md)
-+ [Manage Conferencing Providers](manage-providers.md)
++ [Use Alexa commands](meeting-commands.md)
++ [Link to your calendar system](manage-calendaring.md)
++ [Control conferencing systems](setup-conferencing.md)
++ [Configure meeting room settings](room-settings.md)
++ [View room utilization metrics](room-metrics.md)

@@ -1,10 +1,10 @@
-# Maintaining the Gateway<a name="maintain-gateway"></a>
+# Maintain the gateway<a name="maintain-gateway"></a>
 
 By default, the gateway automatically updates every day during predefined maintenance windows\. These windows are defined in the gateway\.cfg file that the gateway accesses at startup\. To change these maintenance windows, edit the gateway\.cfg file and restart the gateway service\. To manually update the gateway, run the updater binary installed with the gateway as the administrator \(for Windows\) or as the root \(for Linux\)\.
 
-If your Cisco TelePresence or AWS credentials change, use the following steps to update your Alexa for Business gateways to use the new credentials\.
+If your Cisco Webex or AWS credentials change, use the following steps to update your Alexa for Business gateways to use the new credentials\.
 
-**To update Cisco TelePresence Credentials for Windows**
+**To update Cisco Webex credentials for Windows**
 
 1. Stop the **AlexaForBusinessGateway** service\.
 
@@ -14,7 +14,7 @@ If your Cisco TelePresence or AWS credentials change, use the following steps to
 
 1. Run the following command:
 
-   `del <path_to_secrets.cfg_file>` \(for example: `del “C:\Program Files\Amazon\AlexaForBusinessGateway\secrets.cfg”`\)
+   `del <path_to_secrets.cfg_file>` \(for example: `del "C:\Program Files\Amazon\AlexaForBusinessGateway\secrets.cfg"`\)
 
 1. Create a new secrets\.cfg file with the following structure:
 
@@ -29,7 +29,7 @@ If your Cisco TelePresence or AWS credentials change, use the following steps to
 
 1. Start the **AlexaForBusinessGateway** service\.
 
-**To update Cisco TelePresence Credentials for Linux**
+**To update Cisco Webex credentials for Linux**
 
 1. Update the credentials in /etc/alexaforbusinessgateway/secrets\.cfg\.
 
@@ -38,7 +38,7 @@ If your Cisco TelePresence or AWS credentials change, use the following steps to
    + Upstart: `sudo initctl restart alexaforbusinessgateway`
    + Systemd: `sudo systemctl restart alexaforbusinessgateway `
 
-**To update AWS Credentials for Windows**
+**To update AWS credentials for Windows**
 
 1. Stop the **AlexaForBusinessGateway** service\.
 
@@ -48,7 +48,7 @@ If your Cisco TelePresence or AWS credentials change, use the following steps to
 
 1. Run the following command:
 
-   `del <path_to_credentials_file>` \(for example: `del “C:\Program Files\Amazon\AlexaForBusinessGateway\credentials”`\)
+   `del <path_to_credentials_file>` \(for example: `del "C:\Program Files\Amazon\AlexaForBusinessGateway\credentials"`\)
 
 1. Create a new credentials file with the following structure:
 
@@ -60,7 +60,7 @@ If your Cisco TelePresence or AWS credentials change, use the following steps to
 
 1. Start the **AlexaForBusinessGateway** service\.
 
-**To update AWS Credentials for Linux**
+**To update AWS credentials for Linux**
 
 1. Update the credentials in /etc/alexaforbusinessgateway/credentials\.cfg\.
 
@@ -69,12 +69,12 @@ If your Cisco TelePresence or AWS credentials change, use the following steps to
    + Upstart: `sudo initctl restart alexaforbusinessgateway`
    + Systemd: `sudo systemctl restart alexaforbusinessgateway `
 
-## Gateway Configuration Options<a name="gateway-options"></a>
+## Gateway configuration options<a name="gateway-options"></a>
 
-The following configuration parameters are available in the gateway\.cfg file\.
+The following configuration parameters are available in the `gateway.cfg` file\.
 
 
-**Main Configuration**  
+**Main configuration**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -88,7 +88,7 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | metrics |  |  | Object | 
 
 
-**A4B Object**  
+**A4B object**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -97,7 +97,7 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | gatewayARN | The ARN of the gateway after it is registered with your Alexa for Business setup |  | String | 
 
 
-**Shared Credentials**  
+**Shared credentials**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -105,7 +105,7 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | profile | The profile to use in your AWS credentials file |  | String | 
 
 
-**Static Credentials**  
+**Static credentials**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -114,7 +114,7 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | sessionToken | AWS session token\. This is required only if you use temporary security credentials |  | String | 
 
 
-**LocalLog Object**  
+**LocalLog object**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -122,15 +122,15 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | logDir | Path to the log location |  | String | 
 
 
-**RemoteLog Object**  
+**RemoteLog object**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
-| enable | Boolean to enable logging to AWS Cloudwatch | False | Boolean | 
-| failureDir | Path to the directory for backup when logging to AWS Cloudwatch fails |  | String | 
+| enable | Boolean to enable logging to Amazon CloudWatch | False | Boolean | 
+| failureDir | Path to the directory for backup when logging to CloudWatch fails |  | String | 
 
 
-**Maintenance Object**  
+**Maintenance object**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -142,7 +142,7 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | healthCheckPeriod |  How long to wait after an update for the service to regain health, before the update is considered a failure  |  5m  | String | 
 
 
-**Maintenance Window Object**  
+**Maintenance window object**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
@@ -151,8 +151,8 @@ The following configuration parameters are available in the gateway\.cfg file\.
 | width | Maximum length of the maintenance window |  | String | 
 
 
-**Metrics Object**  
+**Metrics object**  
 
 | Parameter | Description | Default Value | Type | 
 | --- | --- | --- | --- | 
-| enable | Boolean to enable logging to AWS Cloudwatch | When this option is enabled, metrics are pushed to AWS Cloudwatch | String | 
+| enable | Boolean to enable logging to CloudWatch | When this option is enabled, metrics are pushed to CloudWatch | String | 

@@ -1,4 +1,4 @@
-# Usage Report Prerequisites<a name="report-prerequisites"></a>
+# Usage report prerequisites<a name="report-prerequisites"></a>
 
 Before you can export your usage reports to S3, complete the following steps\.
 
@@ -6,7 +6,7 @@ Before you can export your usage reports to S3, complete the following steps\.
 
 1. If you don't have one already, create an S3 bucket\. 
 
-   1. Open the [S3 console](https://s3.console.aws.amazon.com/s3) and create an S3 bucket\.
+   1. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/) and create an S3 bucket\.
 
    1. Enter a bucket name\. \(For example, my\-s3\-bucket\-name\.\)
 

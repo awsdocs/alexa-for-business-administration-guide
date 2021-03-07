@@ -1,6 +1,6 @@
-# Manage Conferencing Providers<a name="manage-providers"></a>
+# Manage conferencing providers<a name="manage-providers"></a>
 
-For more information about conference providers, PSTN settings, and SIP/H323 settings, see [Understanding Alexa\-enabled Conferencing](setup-conferencing.md)\.
+For more information about conference providers, PSTN settings, and SIP/H323 settings, see [Control conferencing systems using Alexa for Business](setup-conferencing.md)\.
 
 **To add a conferencing provider**
 

@@ -1,12 +1,12 @@
 # Link Alexa for Business to Microsoft Exchange<a name="exchange"></a>
 
-**To link Alexa for Business to Microsoft Exchange**
+You can link Alexa for Business to Microsoft Exchange if you meet the following requirements:
++ You have an administrator account within your Microsoft Exchange server\.
++ Microsoft Exchange is version 2013\.
++ You have a valid Exchange Web Services \(EWS\) endpoint with a valid digital certificate purchased from a trusted public certificate authority \(CA\)\.
++ You have basic authentication enabled on your Exchange Web Servers \(EWS\) endpoint\.
 
-1. Before you proceed, confirm that you meet the following requirements:
-   + You have an administrator account within your Microsoft Exchange server\.
-   + Microsoft Exchange is version 2013\.
-   + You have a valid Exchange Web Services \(EWS\) endpoint with a valid digital certificate purchased from a trusted public certificate authority \(CA\)\.
-   + You have basic authentication enabled on your Exchange Web Servers \(EWS\) endpoint\.
+**To link Alexa for Business to Microsoft Exchange**
 
 1. Verify that basic authentication is enabled:
 
@@ -45,6 +45,8 @@ Make sure that `your_domain` is the domain of your organization\. You are prompt
      `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails 'RoomMailbox' | Set-CalendarProcessing -DeleteComments $FALSE`
 
 1. Set up permissions\. The service account must have permissions to access the room calendars in your organization\. Run one of the following commands to give the service account access to your room resource mailboxes:
+
+   
 
    For a single room mailbox:
 
@@ -92,6 +94,6 @@ Make sure that `your_domain` is the domain of your organization\. You are prompt
 
    1. Send the invite to book the room\.
 
-   1. Say “Alexa, start my meeting” to the Echo device assigned to the room\. Your Echo device prompts you to join the scheduled meeting without asking you for the meeting ID\.
+   1. Say "Alexa, start my meeting" to the Echo device assigned to the room\. Your Echo device prompts you to join the scheduled meeting without asking you for the meeting ID\.
 
-   1. Say, “Alexa, is this room free?” to the Echo device assigned to the room\. Your Echo device returns that the room is booked\.
+   1. Say, "Alexa, is this room free?" to the Echo device assigned to the room\. Your Echo device returns that the room is booked\.

@@ -1,22 +1,14 @@
-# What Is Alexa for Business?<a name="what-is"></a>
+# What is Alexa for Business?<a name="what-is"></a>
 
 Alexa for Business makes it easy for you to use Alexa in your organization\. Alexa for Business gives you the tools you need to manage Alexa devices, enroll your users, and assign skills, at scale\. You can build your own context\-aware voice skills using the Alexa Skills Kit, and the Alexa for Business APIs, and you can make these available as private skills for your organization\. Alexa for Business also makes it easy to voice\-enable your products and services, providing context\-aware voice experiences for your customers\.
 
-## How to Get Started with Alexa for Business<a name="intro_start"></a>
+## How to get started<a name="intro_start"></a>
 
 After you set up your shared devices, you organize them by creating rooms and assigning devices to these rooms\. You manage skills and settings centrally with skill groups and room profiles\. You can configure the rooms to be linked to your corporate calendar and configure them to automatically join meetings\.
 
-## Related Services<a name="related_services"></a>
-
-The Alexa Skills Kit is a collection of self\-service API actions, tools, documentation, and code examples\. You can create your own skill and add it to the Alexa for Business console\. All of the code runs in the cloud and nothing is stored on devices\. For more information, see the [Alexa Skills Kit details page](https://developer.amazon.com/alexa-skills-kit) and [Managing Skills](manage-skills.md)\. 
-
-## Accessing Alexa for Business<a name="access"></a>
-
-Alexa for Business is accessed through the AWS Management Console or the Alexa for Business API\.
-
 ## Concepts<a name="concepts"></a>
 
-To help you get started with Alexa for Business, review the following concepts:
+Before you get started with Alexa for Business, review the following concepts:
 
 **Alexa**  
 The cloud\-based voice service that powers devices such as the Amazon Echo and Amazon Echo Dot\. You can give Alexa new abilities by creating your own cloud\-based service that accepts requests from Alexa and returns responses\.
@@ -54,13 +46,10 @@ An Alexa device placed in a shared location, such as a conference room, lobby, o
 **smart home device**  
 Smart home lights, thermostats, and drapes\. Not to be confused with device, which is an Alexa device such as the Amazon Echo\.
 
-## Resources<a name="resources"></a>
+## Related services<a name="related_services"></a>
 
-The following related resources can help you as you work with this service\.
-+ ** [Classes & Workshops](https://aws.amazon.com/training/course-descriptions/)** – Links to role\-based and specialty courses as well as self\-paced labs to help sharpen your AWS skills and gain practical experience\.
-+ ** [AWS Developer Tools](https://aws.amazon.com/tools/)** – Links to developer tools, SDKs, IDE toolkits, and command line tools for developing and managing AWS applications\.
-+ ** [AWS Whitepapers](https://aws.amazon.com/whitepapers/)** – Links to a comprehensive list of technical AWS whitepapers, covering topics such as architecture, security, and economics and authored by AWS Solutions Architects or other technical experts\.
-+ ** [AWS Support Center](https://console.aws.amazon.com/support/home#/)** – The hub for creating and managing your AWS Support cases\. Also includes links to other helpful resources, such as forums, technical FAQs, service health status, and AWS Trusted Advisor\.
-+ ** [AWS Support](https://aws.amazon.com/premiumsupport/)** – The primary web page for information about AWS Support, a one\-on\-one, fast\-response support channel to help you build and run applications in the cloud\.
-+ ** [Contact Us](https://aws.amazon.com/contact-us/)** – A central contact point for inquiries concerning AWS billing, account, events, abuse, and other issues\. 
-+ ** [AWS Site Terms](https://aws.amazon.com/terms/)** – Detailed information about our copyright and trademark; your account, license, and site access; and other topics\.
+The Alexa Skills Kit is a collection of self\-service API actions, tools, documentation, and code examples\. You can create your own skill and add it to the Alexa for Business console\. All of the code runs in the cloud and nothing is stored on devices\. For more information, see the [Alexa Skills Kit details page](https://developer.amazon.com/alexa-skills-kit) and [Manage skills](manage-skills.md)\. 
+
+## Pricing<a name="pricing"></a>
+
+With Alexa for Business, you pay only for what you use\. For more information, see [Alexa for Business Pricing](http://aws.amazon.com/alexaforbusiness/pricing/)\.

@@ -1,6 +1,8 @@
-# Calendar Integration<a name="calendar-integration"></a>
+# Calendar integration<a name="calendar-integration"></a>
 
-You can connect Alexa for Business to your calendar system, This allows users to join scheduled meetings without knowing the dial\-in details\. When Alexa for Business is connected to your calendar system and a user asks Alexa to join a meeting, Alexa for Business reads the meeting on the associated room calendar and gets the dial\-in information\. 
+
+
+You can connect Alexa for Business to your calendar system\. This allows users to join scheduled meetings without knowing the dial\-in details\. When Alexa for Business is connected to your calendar system and a user asks Alexa to join a meeting, Alexa for Business reads the meeting on the associated room calendar and gets the dial\-in information\. 
 
 Alexa for Business can get meeting dial\-in information from the following conference providers:
 + Amazon Chime

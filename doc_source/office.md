@@ -2,11 +2,16 @@
 
 There are two methods to link Alexa for Business to your Office 365 account\. 
 
-Use Method 1 to link your Office 365 account by using a service account that has permissions to read and write to your room calendars\. This method provides you with more control over the calendar resources that Alexa for Business can access\. 
+Use [Method 1](#office-delegate) to link your Office 365 account by using a service account that has permissions to read and write to your room calendars\. This method provides you with more control over the calendar resources that Alexa for Business can access\. 
 
-Use Method 2 to use application permissions and set up the calendar only once\. Then you won't need to update permissions when you add Alexa to more rooms\. You must sign in as a global administrator user to link your Office 365 account to Alexa for Business\.
+Use [Method 2](#office-application) to use application permissions and set up the calendar only once\. Then you won't need to update permissions when you add Alexa to more rooms\. You must sign in as a global administrator user to link your Office 365 account to Alexa for Business\.
 
-## Method 1: Link with Delegate Permissions \(Recommended\)<a name="office-delegate"></a>
+**Note**  
+If your organization has set up Microsoft Azure AD conditional access policies, you might need to allow the Alexa for Business client app to access data in your Microsoft Office tenant\. For more information about managing conditional access policies, see [What are conditions in Azure Active Directory conditional access?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/conditions#cloud-apps)
+
+## Method 1: Link with delegate permissions \(recommended\)<a name="office-delegate"></a>
+
+
 
 **To link with delegate permissions**
 
@@ -22,7 +27,7 @@ Use Method 2 to use application permissions and set up the calendar only once\. 
 
 1. Run the following PowerShell command to create a service account with access to the calendars in your organization:
 
-   `New-Mailbox -UserPrincipalName alexaforbusiness@your_domain -Alias “AlexaforBusiness” -Name alexaforbusiness -f Users -FirstName Alexa -LastName “Service Account” -DisplayName "Alexa for Business Service Account"`
+   `New-Mailbox -UserPrincipalName alexaforbusiness@<your_domain> -Alias "AlexaforBusiness" -Name alexaforbusiness -FirstName Alexa -LastName "Service Account" -DisplayName "Alexa for Business Service Account"`
 **Note**  
 Make sure that "your\_domain" is the domain of your organization, and enter your password when prompted\.
 
@@ -30,11 +35,11 @@ Make sure that "your\_domain" is the domain of your organization, and enter your
 
    For a single room mailbox:
 
-   `Set-CalendarProcessing “<room name>” -DeleteComments $FALSE` 
+   `Set-CalendarProcessing "<room name>" -DeleteComments $FALSE` 
 
    For all room mailboxes:
 
-   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails “RoomMailbox” | Set-CalendarProcessing -DeleteComments $FALSE`
+   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails "RoomMailbox" | Set-CalendarProcessing -DeleteComments $FALSE`
 
 1. Run one of the following commands to give the service account permissions to access the room calendars in your organization:
 
@@ -44,7 +49,7 @@ Make sure that "your\_domain" is the domain of your organization, and enter your
 
    For all room mailboxes:
 
-   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails “RoomMailbox” | ForEach-Object {Add-MailboxFolderPermission $_":\calendar" -user alexaforbusiness -AccessRights Editor}`
+   `Get-Mailbox -ResultSize unlimited -RecipientTypeDetails "RoomMailbox" | ForEach-Object {Add-MailboxFolderPermission $_":\calendar" -user alexaforbusiness -AccessRights Editor}`
 
 1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
 
@@ -70,11 +75,11 @@ Now you can associate the email address of your resource mailboxes with your roo
 
    1. Add the room as the resource, add meeting dial\-in information to your meeting invite, and send the invite to book the room\. 
 
-   1. Say “Alexa, start my meeting” to the Echo device assigned to the room\. Your Echo device automatically dials into your meeting without prompting you for a meeting ID\.
+   1. Say "Alexa, start my meeting" to the Echo device assigned to the room\. Your Echo device automatically dials into your meeting without prompting you for a meeting ID\.
 
    1. To test room booking, say "Alexa, is this room free?" to the Echo device in the room\. 
 
-## Method 2: Link with Application Permissions<a name="office-application"></a>
+## Method 2: Link with application permissions<a name="office-application"></a>
 
 **To link with application permissions**
 
@@ -102,6 +107,6 @@ Now you can associate the email address of your resource mailboxes with your roo
 
    1. Add the room as the resource, add meeting dial\-in information to your meeting invite, and send the invite to book the room\. 
 
-   1. Say “Alexa, start my meeting” to the Echo device assigned to the room\.
+   1. Say "Alexa, start my meeting" to the Echo device assigned to the room\.
 
 Your Echo device automatically dials into your meeting without prompting you for a meeting ID\. 

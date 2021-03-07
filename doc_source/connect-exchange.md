@@ -1,4 +1,4 @@
-# Set up Microsoft Exchange Access for Users<a name="connect-exchange"></a>
+# Set up Microsoft Exchange access for users<a name="connect-exchange"></a>
 
 You can link Alexa for Business to your Microsoft Exchange server\. This enables enrolled users to ask Alexa about their scheduled events or add new events to their Microsoft Exchange calendar\.
 

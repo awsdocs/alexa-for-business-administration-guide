@@ -1,4 +1,4 @@
-# Use Zoom Rooms with Alexa for Business<a name="use-zoom"></a>
+# Use Echo devices to control Zoom Rooms<a name="use-zoom"></a>
 
 You can connect Alexa for Business to your Zoom Rooms system to control meetings using your voice\. 
 
@@ -10,13 +10,13 @@ To use the integration, make sure you're using:
 
 1. Prepare for integration:
 
-   1. Set up your Echo device\. For more information, see [Getting Started with Shared Devices](getting-started.md)\.
+   1. Set up your Echo device\. For more information, see [Get started with Alexa for Business shared devices](getting-started.md)\.
 
-   1. Create a new skill group for the Zoom Alexa skill\. For more information, see [Managing Skill Groups](manage-skill-groups.md)\.
+   1. Create a new skill group for the Zoom Alexa skill\. For more information, see [Manage skill groups](manage-skill-groups.md)\.
 
-   1. Create a room in Alexa for Business, add the skill group, and assign the Echo device to the room\. For more information, see [Managing Rooms](manage-rooms.md)\.
+   1. Create a room in Alexa for Business, add the skill group, and assign the Echo device to the room\. For more information, see [Manage rooms](manage-rooms.md)\.
 
-   1. If you're using Office 365 or Microsoft Exchange as your calendar system, link your calendar to Alexa for Business\. For more information, see [Link Alexa for Business to Your Calendar System](manage-calendaring.md)\.
+   1. If you're using Office 365 or Microsoft Exchange as your calendar system, link your calendar to Alexa for Business\. For more information, see [Link Alexa for Business to your calendar system](manage-calendaring.md)\.
 
 1. Set up Zoom as a conferencing provider:
 
@@ -56,17 +56,17 @@ To use the integration, make sure you're using:
 
    1. If your Zoom Rooms configuration is successfully set up, your Zoom Rooms system displays in the list\.
 
-You can now control your Zoom Rooms by talking to Alexa\. For example, say “Alexa, start my meeting” or “Alexa, join my meeting\.”
+You can now control your Zoom Rooms by talking to Alexa\. For example, say "Alexa, start my meeting" or "Alexa, join my meeting\."
 
 When a scheduled meeting associated with your Zoom Room is found on the calendar, you are prompted to join this meeting\. If you don’t want to join the scheduled meeting, you can either start an instant meeting by using the meeting ID 123, or join your personal meeting room by speaking your personal, 10\-digit meeting ID\.
 
-If you encounter any of the following issues, try the these resolutions:
-+ Alexa says that the Zoom room isn't found:
+If you encounter any of the following issues, try these resolutions:
++ Alexa says that the Zoom room isn't found\.
 
   Make sure that the account used for account linking is the same as the account that you used to sign into your Zoom room\. 
-+ Alexa can't find an upcoming event on your calendar:
++ Alexa can't find an upcoming event on your calendar\.
 
   Make sure that the meeting on your calendar was scheduled as a Zoom meeting\. 
-+ Alexa says “It looks like the conference provider is invalid”:
++ Alexa says "It looks like the conference provider is invalid"\.
 
   Make sure that you have the latest version of the Zoom Rooms software\. 

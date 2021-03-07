@@ -1,4 +1,4 @@
-# Require Users to Restrict Calendars to Voice<a name="voice-restrict"></a>
+# Require users to restrict calendars to voice<a name="voice-restrict"></a>
 
 After users link their work calendars to Alexa, they can restrict their calendars to respond to their voices only\. You have the option in the Alexa for Business console to make this a requirement for all users by registering domains for voice restriction\. The domains must match the email addresses of the linked calendars\. 
 
