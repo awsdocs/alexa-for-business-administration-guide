@@ -26,7 +26,8 @@ The following diagram shows how Alexa for Business controls your conference devi
 For more information, see [Get started with Alexa for Business shared devices](getting-started.md) or the documentation provided by the device manufacturer\. 
 
 **Topics**
-+ [Use Zoom Rooms with Alexa built\-in](zoom-rooms.md)
++ [Use Windows Zoom Rooms with Alexa built\-in](zoom-rooms.md)
++ [Use Zoom Rooms Appliance with Alexa built\-in](appliance-zoom-rooms.md)
 + [Use Echo devices to control Zoom Rooms](use-zoom.md)
 + [Use Cisco Webex room devices with Alexa for Business](using-cisco.md)
 + [Use Poly Group Series with Alexa for Business](using-poly.md)

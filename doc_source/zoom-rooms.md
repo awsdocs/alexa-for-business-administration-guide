@@ -1,6 +1,6 @@
-# Use Zoom Rooms with Alexa built\-in<a name="zoom-rooms"></a>
+# Use Windows Zoom Rooms with Alexa built\-in<a name="zoom-rooms"></a>
 
-Alexa for Business can bring a touchless experience to your Zoom Rooms\. You can use Alexa for Business for a hands\-free and consistent way to control your Zoom Rooms\. The built\-in solution makes it easy to deploy, with no additional hardware needed\. With just a few quick setup steps, users can ask Alexa to do things like:
+Alexa for Business can bring a touchless experience to your Windows Zoom Rooms\. You can use Alexa for Business for a hands\-free and consistent way to control your Windows Zoom Rooms\. The built\-in solution makes it easy to deploy, with no additional hardware needed\. With just a few quick setup steps, users can ask Alexa to do things like:
 +  "Alexa, join my meeting"
 + "Alexa, find me an available room"
 +  "Alexa, what’s the guest Wi\-Fi password"

@@ -1,7 +1,7 @@
 # Alexa for Business Administration Guide
 
 -----
-*****Copyright &copy; 2021 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -34,7 +34,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Manage skill groups](manage-skill-groups.md)
    + [Send announcements](announcements.md)
 + [Use Alexa for Business with meeting room systems](room-systems.md)
-   + [Use Zoom Rooms with Alexa built-in](zoom-rooms.md)
+   + [Use Windows Zoom Rooms with Alexa built-in](zoom-rooms.md)
       + [Prerequisites](zoom-account.md)
       + [Download and install the Alexa for Business app](zoom-app.md)
       + [Activate the Alexa for Business app](zoom-configure.md)
@@ -43,6 +43,12 @@ Amazon's trademarks and trade dress may not be used in
       + [Troubleshoot Zoom Rooms](zoom-troubleshoot.md)
       + [Security and privacy frequently asked questions for the Alexa for Business Windows Client (Zoom Room Edition)](zoom-security.md)
       + [Uninstall the Zoom App](zoom-uninstall.md)
+   + [Use Zoom Rooms Appliance with Alexa built-in](appliance-zoom-rooms.md)
+      + [Prerequisites](zoom-prereq.md)
+      + [Activate Alexa for Business](zoom-activate.md)
+      + [Enable advanced settings](appliance-advanced-settings.md)
+      + [Security and privacy frequently asked questions for Alexa for Business built-in (Zoom Room Edition)](appliance-zoom-security.md)
+      + [Deactivate Alexa for Business](appliance-zoom-uninstall.md)
    + [Use Echo devices to control Zoom Rooms](use-zoom.md)
    + [Use Cisco Webex room devices with Alexa for Business](using-cisco.md)
    + [Use Poly Group Series with Alexa for Business](using-poly.md)

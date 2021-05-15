@@ -92,7 +92,7 @@ Alexa can now read back the upcoming events on the calendar\.
 **To troubleshoot Microsoft Exchange access**
 + If you experience one of the following issues, follow these steps:
   + If account linking fails in the Alexa app, verify that the email address you invited the user with matches the email address in your Microsoft Exchange server\. Also, make sure that basic authentication is enabled for your EWS endpoint\.
-  + If setting up the Microsoft Exchange account fails in Alexa for Business and you see the error message "The calendar account could not be linked\. If the issue persists, contact [AWS Support](https://aws.amazon.com/premiumsupport/)\. Invalid parameter provided\.”, validate that your EWS endpoint is valid and remotely accessible\. 
+  + If setting up the Microsoft Exchange account fails in Alexa for Business and you see the error message "The calendar account could not be linked\. If the issue persists, contact [AWS Support](https://aws.amazon.com/premiumsupport/)\. Invalid parameter provided\.", validate that your EWS endpoint is valid and remotely accessible\. 
 
 **To test the EWS endpoint connection and service account credentials**
 
