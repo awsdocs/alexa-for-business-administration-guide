@@ -14,6 +14,7 @@ Alexa for Business supports the following video conferencing systems and in\-roo
 | Crestron 3\-Series | Please contact a Crestron\-certified installer | Using another Alexa device, like an Echo Dot | 
 | Poly Group Series 310, 500, 700 |  | Using another Alexa device, like an Echo Dot | 
 | Zoom Rooms |  Zoom Rooms for Mac version 4\.1\.20278\.0206 or higher Zoom Rooms for PC version 4\.1\.22620\.0319 or higher  | Using another Alexa device, like an Echo Dot | 
+| Zoom Rooms Appliance |  DTEN ON and DTEN ME Logitech Rallybar Neat Bar and Neat Board Poly Studio X Series, G7500  | Alexa built\-in | 
 
 When the room doesn’t contain any of the supported video conferencing or in\-room control systems, you can use the Echo device as a speaker phone to dial into meetings\. In this case, the Echo device uses Alexa Calling and Messaging, and makes a PSTN call to the phone number specified in your conference provider settings\. Currently, the Echo device can call phone numbers in the US, Canada, and Mexico\.
 

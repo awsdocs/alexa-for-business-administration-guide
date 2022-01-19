@@ -8,4 +8,3 @@ By default, IAM users don't have permissions to manage Alexa for Business resour
 + [Managed policies and inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
 + [Access management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html)
 
-In alignment with standard security guidelines, we recommend that you create another IAM user for the Device Setup Tool\. We recommend a separate user with only the necessary permissions for Alexa for Business\. For more information, see [Create an IAM user for the Device Setup Tool](getting-started.md#create-IAM-user)\.

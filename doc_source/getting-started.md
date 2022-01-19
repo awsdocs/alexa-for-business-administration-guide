@@ -1,12 +1,11 @@
 # Get started with Alexa for Business shared devices<a name="getting-started"></a>
 
 After setting your IAM permissions, you can now get started with your shared devices\. The following devices can be set up as shared devices:
-+ Echo \(1st, 2nd, and 3rd generation\)
++ Echo \(1st, 2nd, 3rd, and 4th generation\)
 + Echo Dot
   + 2nd, 3rd, and 4th generation
   + 3rd generation with clock and 4th generation with clock
-+ Echo Plus \(1st, 2nd, and 4th generation\)
-+ Echo Show 8
++ Echo Plus \(1st, and 2nd generation\)
 + Polycom Trio 8500 and 8800
 + Lifesize Icon 300, 500, and 700
 + Amazon Chime on Dolby Voice Room 
@@ -16,8 +15,6 @@ After setting your IAM permissions, you can now get started with your shared dev
 + [Prepare your devices](#prepare-devices)
 + [Create network profile](#network-profile)
 + [Import your devices](#import)
-+ [Create an IAM user for the Device Setup Tool](#create-IAM-user)
-+ [Run the Device Setup Tool](#run-tool)
 + [Create room profile, skill group, and room](#create-resources)
 
 ## Get recommended hardware<a name="get-hardware"></a>
@@ -27,8 +24,6 @@ We recommend that you obtain the following hardware to simplify the setup proces
 + Power strips appropriately spaced for Echo or Echo Dot power adapters
 + Extra power adapters
 + Windows laptop or desktop with Wi\-Fi controller
-**Note**  
-The Device Setup Tool requires a Windows laptop\. It doesn't work on any virtual desktop running in the cloud or on Apple hardware\.
 
 ## Prepare your devices<a name="prepare-devices"></a>
 
@@ -48,10 +43,7 @@ We recommend setting up your shared Echo devices on a dedicated network created 
 
 ## Import your devices<a name="import"></a>
 
-Use the Alexa Companion app to set up your devices using your Amazon\.com or Amazon Business account, then import your devices into Alexa for Business\. Alternatively, you can create an IAM user for the Device Setup Tool provided by Alexa for Business, then use the Device Setup Tool to set up your devices\. For more information, see [Create an IAM user for the Device Setup Tool](#create-IAM-user) and [Run the Device Setup Tool](#run-tool)\. 
-
-**Note**  
- If you need your devices to connect to WPA2 Enterprise Wi\-Fi, you must use the Device Setup Tool\. 
+Use the Alexa Companion app to set up your devices using your Amazon\.com or Amazon Business account, then import your devices into Alexa for Business\. 
 
 Follow these steps to import your devices into Alexa for Business using the Alexa Companion app\.
 
@@ -75,112 +67,9 @@ We recommend associating the network profile with your corporate network credent
 
 After your devices are set up, they are listed on the **Shared devices** page of the Alexa for Business console\. 
 
-## Create an IAM user for the Device Setup Tool<a name="create-IAM-user"></a>
-
-Before you can use the Device Setup Tool, you must create an IAM user for it\.
-
-**To create an IAM user for the Device Setup Tool**
-
-1. Open the IAM console at [https://console\.aws\.amazon\.com/iam/](https://console.aws.amazon.com/iam/)\.
-
-1. Choose **Users**, **Create new users**\.
-
-1. Enter a user name \(for example, **DeviceSetupTool**\), and choose **Programmatic access**, **Next**\.
-
-1. Choose **Attach existing policy directly**, **AlexaforBusinessDeviceSetup** from the list, and **Next**\.
-
-1. \(Optional\) If you plan to use **WPA2 Enterprise** for the **Network security type** in the **Device Setup Tool**, attach the following custom policy for additional ACM PCA permissions: 
-**Note**  
-We recommend that you use scoped down permissions for specific CAs\.
-
-   ```
-   { 
-      "Version": "2012-10-17",
-      "Statement": [ 
-         { 
-            "Effect": "Allow",
-            "Action": [ 
-               "acm-pca:ListCertificateAuthorities"
-            ],
-            "Resource": "*"
-         },
-         { 
-            "Effect": "Allow",
-            "Action": [ 
-               "acm-pca:IssueCertificate",
-               "acm-pca:GetCertificate"
-            ],
-            "Resource": "arn:aws:acm-pca:region:account:certificate-authority/11111111-1111-1111-111111111111"
-         }
-      ]
-   }
-   ```
-
-    If you want don't want to be restricted to a specific PCA CA, attach the following policy:
-
-   ```
-   { 
-      "Version": "2012-10-17",
-      "Statement": [ 
-         { 
-            "Effect": "Allow",
-            "Action": [ 
-               "acm-pca:ListCertificateAuthorities",
-               "acm-pca:IssueCertificate",
-               "acm-pca:GetCertificate"
-            ],
-            "Resource": "*"
-         }
-      ]
-   }
-   ```
-
-1. Choose **Create user**\.
-
-1. Download and save the IAM access key and secret key\. You need them later when you configure the Device Setup Tool\.
-
-## Run the Device Setup Tool<a name="run-tool"></a>
-
-After you create an IAM user for the Device Setup Tool, you can run the Device Setup Tool to set up your devices\.
-
-Follow these steps to run the Device Setup Tool on a Windows computer enabled with Wi\-Fi\.
-
-**To run the Device Setup Tool**
-
-1. Open the Alexa for Business console at [https://console\.aws\.amazon\.com/a4b/](https://console.aws.amazon.com/a4b/)\.
-
-1. Choose **Shared devices**\.
-
-1. Choose **Set up devices**\.
-
-1. On the **Set up your Alexa devices** page, choose the first button, **Download and run Device Setup Tool**\.
-
-1. Install and open the Device Setup Tool\. 
-
-1. On the home page of the application, choose **Get started**\.
-
-1. Enter the **Access key ID** and **Secret access key** that you created for the Device Setup Tool user, and choose **Next**\.
-
-1. Select the network profile to associate with your devices, and choose **Save**\.
-   + For information about how to create a network profile, see [Create network profile](#network-profile)\.
-
-1. After selecting the network profile and verifying the network configuration is accurate, choose **Next**\.
-
-1. Put your Alexa devices into setup mode by powering them on for the first time, or by holding the action button on the top of the Echo device\.
-
-1. From the **Device setup** home page, choose **Start setup** to scan for all Alexa devices in setup mode nearby and register them to your Alexa for Business organization\.
-**Note**  
-If you don't want to set up all Alexa devices in setup mode near your computer, choose **Select devices** and select from the list the devices to set up\. To download a \.csv file with the MAC address for your selected devices, choose **Download MAC info**\. 
-
-1. Wait for the tool to complete\. You can monitor progress in the tool to see which device is being set up, as well as the status of each device \(**Successful** or **Failed**\)\.
-**Note**  
-After the status for a device changes to **Successful**, you can unplug the device even if the light ring is still orange\. If all devices show as **Failed**, make sure that you have a strong connection to the network and that the Wi\-Fi information is entered correctly\. 
-
-After all of your devices have been set up, they are listed on the **Shared devices** page of the Alexa for Business console\. To set up more devices, repeat steps 1–12 for the additional devices\. 
-
 ## Create room profile, skill group, and room<a name="create-resources"></a>
 
-After you set up your devices with the Device Setup Tool, you are ready to create the following resources:
+You are now ready to create the following resources:
 + [A room](manage-rooms.md)
 + [A room profile](manage-profiles.md)
 + [A skill group](manage-skill-groups.md)

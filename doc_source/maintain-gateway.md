@@ -83,8 +83,8 @@ The following configuration parameters are available in the `gateway.cfg` file\.
 | credentials | Defines which AWS credentials to use |  | Null or object | 
 | localLog | Settings to have gateway log to a local file |  | Object | 
 | remoteLog | Settings to have gateway log to Amazon CloudWatch |  | Object | 
-| maintenance | Maintenance settings for the gateway, such as the update window and service manager |  /path/to/root\-ca/cert\.pem  | Object | 
-| rootCAsFile | Maintenance settings for the gateway, such as the update window and service manager |  | String | 
+| maintenance | Maintenance settings for the gateway, such as the update window and service manager |  | Object | 
+| rootCAsFile | The root certificate authority \(CA\)\. | /path/to/root\-ca/cert\.pem | String | 
 | metrics |  |  | Object | 
 
 

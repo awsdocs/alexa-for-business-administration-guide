@@ -2,7 +2,7 @@
 
 If you are on the Windows desktop of your Zoom Room, use the button below to download and install the Alexa for Business app\.
 
- [ ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/a4b/latest/ag/images/download-button.png) ](https://d2yyh5gpqnbgek.cloudfront.net/installer/windows/AlexaForBusiness.msi) 
+ [https://d2yyh5gpqnbgek.cloudfront.net/installer/windows/AlexaForBusiness.msi](https://d2yyh5gpqnbgek.cloudfront.net/installer/windows/AlexaForBusiness.msi) 
 
 Otherwise, you can follow the steps below to download and install the app\.
 

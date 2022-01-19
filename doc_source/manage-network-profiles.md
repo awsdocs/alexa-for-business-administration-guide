@@ -2,7 +2,7 @@
 
 To simplify the process of creating and managing network configurations, you can define network profiles\. Network profiles are associated with devices and consist of network configuration settings, including the SSID, network security type, network credentials, and description\. When you make a change to the network profile, the changes are applied to all shared devices associated with that profile\. If your shared devices are set up on a closed network, you can use network profiles for password rotation\. If your shared devices are set up on a WPA2 enterprise network, you can also use enterprise certificate rotation\. 
 
-When you set up a device using the device setup tool, you must first select a network profile to associate devices to\. If the device was set up using **Import Devices**, you can associate the existing device to a network profile\. 
+When you set up a device, you must first select a network profile to associate devices to\. If the device was set up using **Import Devices**, you can associate the existing device to a network profile\. 
 
 **To create a network profile**
 

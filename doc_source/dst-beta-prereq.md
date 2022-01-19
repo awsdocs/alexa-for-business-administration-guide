@@ -1,6 +1,6 @@
 # WPA2 enterprise prerequisite<a name="dst-beta-prereq"></a>
 
-If you plan to use WPA2 Enterprise Wi\-Fi to set up your shared devices, you will specify this network security type later in the Device Setup Tool\. For more information, see [Run the Device Setup Tool](getting-started.md#run-tool)\. However, you must create a Private Certificate Authority \(PCA\) in AWS Certificate Manager \(ACM\)\. To do this, follow these steps:
+If you plan to use WPA2 Enterprise Wi\-Fi to set up your shared devices, you will specify this network security type later\. However, you must create a Private Certificate Authority \(PCA\) in AWS Certificate Manager \(ACM\)\. To do this, follow these steps:
 
 1. [Create a Private Certificate Authority](https://docs.aws.amazon.com/acm-pca/latest/userguide/PcaCreateCa.html) and tag the CA with the following: Key=a4b, Value=enabled\.
 

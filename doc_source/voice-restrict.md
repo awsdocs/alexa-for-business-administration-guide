@@ -29,11 +29,8 @@ To set a voice restriction for their calendar, users must first create a voice p
 
 1. Choose the linked calendar from the list\.
 
-1. In the **Voice Restriction** section, on the menu, choose one of the following options:
-   + **Only My Voice** – Alexa reads calendar events only after recognizing your voice\.
-   + **All Enrolled Voices** – Alexa reads calendar events for any recognized speakers in your home with a voice profile\.
-   + **No Voice Restriction** – Alexa doesn't restrict access to the calendar\.
+1. In the **Voice Restriction** section, enable voice restriction so that Alexa reads calendar events only after recognizing your voice\.
 
-The voice restriction selected applies to all of the devices registered to the user's account\.
+The voice restriction setting applies to all of the devices registered to the user's account\.
 
 If there are other adult users in the user's home, users can personalize calendar access across their shared Alexa devices by creating an Amazon Household\. Users can link their calendar accounts to Alexa individually in the Alexa app, then set the **Only My Voice** voice restriction so that Alexa provides information from that calendar only when recognizing each of their voices\. For more information, see [Using Household Profiles on Alexa Devices](https://www.amazon.com/gp/help/customer/display.html?nodeId=201628040)\.

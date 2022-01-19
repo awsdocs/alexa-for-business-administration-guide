@@ -16,9 +16,6 @@ The cloud\-based voice service that powers devices such as the Amazon Echo and A
 **Alexa device**  
 A device that provides access to the Alexa service\. Examples include Amazon Echo, Amazon Echo Dot, and devices that use the Alexa Voice Service\.
 
-**Device Setup Tool**  
-A Windows\-based application you can use to connect Amazon Echo devices to your Wi\-Fi network and register them with Alexa for Business\.
-
 **enrolled user**  
 Employees can join an organization by enrolling their personal Amazon account\. When users join their employer’s Alexa for Business organization, they can use all of the Alexa for Business features on an unlimited number of Alexa endpoints registered to the Amazon account used when they join\.
 

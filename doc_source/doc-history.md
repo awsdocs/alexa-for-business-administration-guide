@@ -4,6 +4,7 @@ The following table describes important changes to the Alexa for Business Admini
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Device Setup Tool is deprecated\.](#doc-history) | For more information, see [Import your devices](https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html#import)\. | August 2, 2021 | 
 | [You can now set up Echo Show 8 devices as shared devices\.](#doc-history) | For more information, see [Getting Started with Shared Devices](https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html)\. | December 29, 2020 | 
 | [Lenovo ThinkSmart Hub devices are supported for Zoom Rooms with Alexa built\-in\.](#doc-history) | For more information, see [Prerequisites](https://docs.aws.amazon.com/a4b/latest/ag/zoom-account.html)\. | November 13, 2020 | 
 | [You can now set up Echo Dot 4th generation, Echo Dot 4th genetation with clock, and Echo Plus 4th generation as shared devices\.](#doc-history) | For more information, see [Getting Started with Shared Devices](https://docs.aws.amazon.com/a4b/latest/ag/getting-started.html)\. | October 28, 2020 | 
