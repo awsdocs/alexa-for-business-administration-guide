@@ -1,3 +1,0 @@
-# Change Alexa for Business settings for your Zoom Rooms<a name="zoom-settings"></a>
-
-Each Zoom Room set up with Alexa for Business is assigned to a room profile named **Zoom Room Profile**\. A room profile contains different settings such as location \(weather and time\), distance units, meeting settings, and more\. To edit this room profile or to create one, see [Manage room profiles](manage-profiles.md)\.
